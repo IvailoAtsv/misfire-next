@@ -9,7 +9,7 @@ export default function Home() {
     <main className="mt-[70px] flex flex-col items-center justify-start">
       <Hero />
       <Services />
-      <TuningCTA />
+      {/* <TuningCTA /> */}
       <About />
       <Contact />
     </main>

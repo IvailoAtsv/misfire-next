@@ -1,10 +1,10 @@
 const imgStyles = "transition duration-300 hover:scale-105 z-20 rounded-lg object-cover h-[50%]"
 export const About = () => {
     return (
-        <section className="bg-background text-white w-[90%] min-h-[80vh] max-w-[1400px]">
+        <section className="mb-36 bg-background text-white w-[90%] min-h-[80vh] max-w-[1400px]">
             <div className="max-w-[1400px] mx-auto">
-                <div className="flex flex-col-reverse md:flex-wrap items-center justify-center">
-                    <div className="w-full flex flex-col md:flex-row justify-center items-center lg:w-6/12">
+                <div className="flex flex-col-reverse md:flex-row items-center justify-center">
+                    <div className="w-full flex justify-center items-center lg:w-6/12">
                         <section className="w-full flex h-[80vh] max-h-[900px] justify-start items-center gap-4 flex-1">
                             <div className="flex-col h-full gap-4 flex justify-center items-center">
                                 <img src="/img1.jpg" className={imgStyles} />
@@ -12,7 +12,7 @@ export const About = () => {
                             </div>
                             <div className="relative flex items-center justify-center h-full group">
                                 <img src="/img3.jpg" className={imgStyles} />
-                                <svg className="transition duration-300 absolute bottom-[20%] group-hover:scale-105 z-0 left-[-10%]"
+                                <svg className="transition duration-300 absolute bottom-[20%] group-hover:scale-105 z-0 right-[-10%]"
                                     width="134"
                                     height="106"
                                     viewBox="0 0 134 106"
@@ -583,7 +583,7 @@ export const About = () => {
                             </div>
                         </section>
                     </div>
-                    <div className="w-full z-20 bg-transparent p-4 flex-1">
+                    <div className="w-full z-20 bg-transparent py-4 flex-1">
                         <div className="mt-10 lg:mt-0">
                             <span className="mb-4 bg-transparent block text-xl font-light text-accent">
                                 Защо да изберете нас?

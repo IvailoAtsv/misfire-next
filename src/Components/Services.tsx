@@ -20,8 +20,8 @@ const services: Service[] = [
 export const Services = () => {
     return (
         <div
-            id="services"
-            className="w-full h-auto py-10 flex flex-col justify-center items-center bg-background"
+            id="services" 
+            className="w-full h-auto mb-10 py-10 flex flex-col justify-center items-center bg-background"
         >
             <section className="w-[90%] max-w-[1600px] flex-col items-center flex h-full justify-center">
                 <h2 className="self-center pb-8 text-5xl text-white">Услуги</h2>
