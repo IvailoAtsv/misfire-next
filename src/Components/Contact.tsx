@@ -5,7 +5,7 @@ import { FaLocationDot } from 'react-icons/fa6'
 
 export const labelStyles = 'text-2xl text-white'
 export const inputStyles =
-    'bg-accentDark text-lg outline-white px-3 py-4 rounded-lg w-[100%]'
+    'bg-accentDark text-lg outline-white p-3 rounded-lg w-[100%]'
 export const Contact = () => {
     return (
         <div
@@ -26,26 +26,26 @@ export const Contact = () => {
                     <h2 className="text-5xl mb-auto font-bold">Свържете се с нас!</h2>
                     <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
                         <FormPair>
-                            <label className={labelStyles}>Име</label>
+                            <label className={labelStyles}>Име:</label>
                             <input type="text" className={inputStyles} />
                         </FormPair>
                         <FormPair>
-                            <label className={labelStyles}>Телефонен номер</label>
+                            <label className={labelStyles}>Телефонен номер:</label>
                             <input type="text" className={inputStyles} />
                         </FormPair>
                         <FormPair>
-                            <label className={labelStyles}>Запитване</label>
+                            <label className={labelStyles}>Запитване:</label>
                             <input
                                 type="text"
                                 name="message"
                                 className={inputStyles}
                             />
                         </FormPair>
-                        <button className="transition duration-300 bg-white text-accent font-bold w-[30%] ml-auto rounded-lg px-4 py-2 mt-2  hover:bg-red-800 hover:text-white">
+                        <button className="transition duration-300 bg-white text-accent font-bold w-[30%] ml-auto rounded-lg px-4 py-2 mt-2  hover:bg-accentDark hover:text-white">
                             Изпрати
                         </button>
                     </div>
-                    <section className="w-[100%] text-lg mt-auto flex-col gap-2 lg:flex-row py-2 border-t-2 border-red-800 font-light flex justify-between items-start lg:items-center">
+                    <section className="w-[100%] text-lg mt-auto flex-col gap-2 lg:flex-row py-2 border-t-2 border-accentDark font-light flex justify-between items-start lg:items-center">
                         <div className="flex flex-col gap-2 text-left justify-center items-start">
                             <a
                                 className="flex cursor-pointer  no-underline items-center gap-2"
