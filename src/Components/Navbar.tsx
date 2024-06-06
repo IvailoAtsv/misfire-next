@@ -16,7 +16,7 @@ export function Navbar({ }) {
             className={`bg-background text-white font-light overflow-hidden flex justify-center items-center fixed w-full z-50 top-0 start-0 shadow-xl`}
         >
             <div
-                className={`relative max-w-[1400px] z-50 flex justify-center items-center w-[90%] min-h-[60px] ${nav ? 'flex justify-center items-center flex-col' : ''
+                className={`relative max-w-[1400px] z-50 flex justify-center items-center w-[90%] min-h-[70px] ${nav ? 'flex justify-center items-center flex-col' : ''
                     } py-1`}
             >
                 <Link href={"/"}>
@@ -52,7 +52,7 @@ export function Navbar({ }) {
 
                                 className={navBtnStyle}
                             >
-                                За нас
+                                Пътна помощ
                             </button>
                         </Link>
                     </li>
