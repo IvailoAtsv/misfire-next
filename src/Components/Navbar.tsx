@@ -35,7 +35,7 @@ export function Navbar({ }) {
                 </button>
 
                 <ul
-                    className={`transition-all duration-300 ease-out overflow-hidden sm:overflow-auto w-full flex flex-col ${nav ? 'h-auto min-h-[40vh]  pt-[15%]' : 'md:h-auto h-0'} md:flex md:flex-row mx-auto sm:mb-0 mb-10 md:justify-end md:gap-4 justify-start items-center rounded-lg`}
+                    className={`transition-all duration-300 ease-out overflow-hidden sm:overflow-auto w-full flex flex-col ${nav ? 'h-auto min-h-[35vh]  pt-[8%]' : 'md:h-auto h-0'} md:flex md:flex-row mx-auto sm:mb-0 mb-10 md:justify-end md:gap-4 justify-start items-center rounded-lg`}
                 >
                     <li className={liStyles}>
                         <Link onClick={()=>setNav(false)} href="/">

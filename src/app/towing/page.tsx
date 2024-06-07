@@ -7,7 +7,7 @@ const Towing = () => {
             <section className="w-full h-[600px] max-w-[1400px] flex flex-col lg:flex-row justify-center items-center">
                 <div className="text-white w-[100%] flex flex-1 flex-col justify-center items-center ">
                     <h1 className="w-[90%] my-2 font-semibold text-5xl">Пътна Помощ</h1>
-                    <p className="w-[90%] font-extralight text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени. Доверете ни се да ви върнем на пътя.</p>
+                    <p className="w-[90%] font-extralight text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени. Доверете ни се да ви приберем от пътя.</p>
                 </div>
                 <img src="towBg.webp" className="flex-1 w-[90%] h-[90%] lg:w-1/2 object-cover rounded-md" />
             </section>
@@ -16,7 +16,7 @@ const Towing = () => {
                     <img src="/non-stop.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto " />
                      <div className="text-white">
                         <p className="opacity-75">работим всеки ден</p>
-                        <p className="text-lg font-normal">Работим 24ч. в денонощието</p>
+                        <p className="text-lg font-normal">24ч. в денонощието</p>
                     </div>
                 </span>
                 <a target="_blank"
@@ -30,8 +30,8 @@ const Towing = () => {
                 <span className="flex-1 w-full h-[150px] text-white border-2 border-white  border-dashed border-opacity-15 py-4 flex justify-center lg:border-l-0 items-center gap-4">
                     <img src="/quality.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto" />
                      <div className="text-white">
-                        <p className="opacity-75">Гаранция за качествo</p>
-                        <p className="text-lg font-semibold">Професиолано обслужване</p>
+                        <p className="opacity-75">Работим по ДДС</p>
+                        <p className="text-lg font-semibold">Лицензирана фирма</p>
                     </div>
                 </span>
             </div>
