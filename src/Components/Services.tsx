@@ -23,9 +23,9 @@ export const Services = () => {
             id="services" 
             className="w-full h-auto mb-10 py-10 flex flex-col justify-center items-center bg-background"
         >
-            <section className="w-[90%] max-w-[1400px] flex-col items-center flex h-full justify-center">
+            <section className="w-[90%] max-w-7xl flex-col items-center flex h-full justify-center">
                 <h2 className="self-center pb-8 text-5xl text-white">Услуги</h2>
-                <div className=' max-w-[1400px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-2 xl:grid-cols-4'>
+                <div className=' max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-2 xl:grid-cols-4'>
                     {services.map(service => <ServiceCard src={service.src}
                                 label={service.label}
                                 link={service.link}/>)}
@@ -35,7 +35,7 @@ export const Services = () => {
     )
 }
 
-const ServiceCard: React.FC<Service> = (service) => {
+export const ServiceCard: React.FC<Service> = (service) => {
     return (
         <a href={service?.link}
             className="p-6 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-35 flex-1 w-[98%] max-h-[350px] hover:translate-y-[-3px] hover:border-opacity-100 cursor-pointer"

@@ -1,10 +1,11 @@
+import { ServiceCard } from "@/Components/Services";
 import { FaPhone } from "react-icons/fa";
 import { MdVerifiedUser } from "react-icons/md";
 
 const Towing = () => {
     return (
         <main className="w-full relative mt-[80px] sm:mt-[100px] xl:mt-[60px] flex flex-col justify-normal items-center">
-            <section className="w-full h-[500px] max-w-[1400px] flex flex-col lg:flex-row justify-center items-center">
+            <section className="w-full h-[500px] max-w-7xl flex flex-col lg:flex-row justify-center items-center">
                 <div className="text-white py-6 w-[100%] flex flex-1 flex-col justify-center items-center ">
                     <h1 className="w-[90%] my-2 text-center lg:text-left font-semibold text-5xl">Пътна Помощ</h1>
                     <p className="w-[90%] font-extralight text-center lg:text-left text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</p>
@@ -41,6 +42,12 @@ const Towing = () => {
                     </div>
                 </span>
             </div>
+            <section className="my-6 w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-7xl">
+                <ServiceCard label="Изтегляне от път" src="/towed-car.svg"/>
+                <ServiceCard label="Изтегляне при инцидент" src="/car-crash.svg"/>
+                <ServiceCard label="Какво аджеба прави ПП ве дейба" src="/towed-car.svg"/>
+            </section>
+
         </main>
     )
 }

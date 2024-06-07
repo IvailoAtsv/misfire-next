@@ -1,8 +1,8 @@
 const imgStyles = "transition duration-300 hover:scale-105 z-20 rounded-lg object-cover h-[50%]"
 export const About = () => {
     return (
-        <section className="mb-36 bg-background text-white w-[90%] min-h-[80vh] max-w-[1400px]">
-            <div className="max-w-[1400px] mx-auto">
+        <section className="mb-36 bg-background text-white w-[90%] min-h-[80vh] max-w-7xl">
+            <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
                     <div className="w-full flex justify-center items-center lg:w-6/12">
                         <section className="w-full flex h-[80vh] max-h-[900px] justify-center lg:justify-start items-center gap-4 flex-1">

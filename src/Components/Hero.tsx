@@ -11,7 +11,7 @@ export const Hero = () => {
             className="relative w-full md:bg-[url('/hero.mp4')] h-[60vh] bg-[url('/mobileHero.mp4')] bg-cover"
         >
             <span className="absolute flex justify-center items-center top-0 left-0 w-full h-[60vh] bg-black bg-opacity-35"></span>
-            <div className="relative border-white border-dashed border-opacity-30 border-2 border-t-0 z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] max-w-[1400px] flex items-center justify-center">
+            <div className="relative border-white border-dashed border-opacity-30 border-2 border-t-0 z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] max-w-7xl flex items-center justify-center">
                 {/* <div className="absolute z-50 gap-2 top-10 right-[-18px] flex flex-col items-center justify-center">
                     <FaInstagram className={iconStyle} size={32}/>
                     <FaInstagram className={iconStyle} size={32}/>
