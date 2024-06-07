@@ -47,16 +47,6 @@ export function Navbar({ }) {
                             </button>
                         </Link>
                     </li>
-                    <li className={liStyles}>
-                        <Link onClick={()=>setNav(false)} href="/about">
-                            <button
-
-                                className={navBtnStyle}
-                            >
-                                Пътна помощ
-                            </button>
-                        </Link>
-                    </li>
                      <li className={liStyles}>
                         <Link onClick={()=>setNav(false)} href="/tuning">
                             <button
@@ -64,6 +54,16 @@ export function Navbar({ }) {
                                 className={navBtnStyle}
                             >
                                 Тунинг
+                            </button>
+                        </Link>
+                    </li>
+                     <li className={liStyles}>
+                        <Link onClick={()=>setNav(false)} href="/towing">
+                            <button
+
+                                className={navBtnStyle}
+                            >
+                                Пътна помощ
                             </button>
                         </Link>
                     </li>

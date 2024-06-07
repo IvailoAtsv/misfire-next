@@ -583,7 +583,7 @@ export const About = () => {
                             </div>
                         </section>
                     </div>
-                    <div className="w-full z-20 bg-transparent py-4 flex-1">
+                    <div className="w-full z-20 bg-transparent text-center md:text-left py-4 flex-1">
                         <div className="mt-10 lg:mt-0">
                             <span className="mb-4 bg-transparent block text-xl font-light text-accent">
                                 Защо да изберете нас?
