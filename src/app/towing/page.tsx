@@ -13,7 +13,7 @@ const Towing = () => {
             </section>
             <div className="w-full my-6 min-h-[150px] bg-background flex flex-col lg:flex-row">
                 <span className="flex-1 w-full h-[150px] text-white border-2 border-white  border-dashed border-opacity-15 py-4 flex justify-center lg:border-r-0 items-center gap-4">
-                    <img src="/non-stop.svg" className="h-[65%] max-h-[70px] w-auto " />
+                    <img src="/non-stop.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto " />
                      <div className="text-white">
                         <p className="opacity-75">работим всеки ден</p>
                         <p className="text-lg font-normal">Работим 24ч. в денонощието</p>
@@ -21,14 +21,14 @@ const Towing = () => {
                 </span>
                 <a target="_blank"
                     href="tel:097648567539" className="flex-1 h-[150px] py-4 gap-4 flex justify-center items-center overflow-hidden border border-accent bg-accent">
-                    <img src="/phonecall.svg" className="h-[65%] max-h-[70px] w-auto" />
+                    <img src="/phonecall.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto" />
                    <div className="text-white">
                         <p className="opacity-75">при нужда от помощ</p>
                         <p className="text-lg font-semibold">позвънете на 097648567539</p>
                     </div>
                 </a>
                 <span className="flex-1 w-full h-[150px] text-white border-2 border-white  border-dashed border-opacity-15 py-4 flex justify-center lg:border-l-0 items-center gap-4">
-                    <img src="/quality.svg" className="h-[65%] max-h-[70px] w-auto" />
+                    <img src="/quality.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto" />
                      <div className="text-white">
                         <p className="opacity-75">Гаранция за качествo</p>
                         <p className="text-lg font-semibold">Професиолано обслужване</p>
