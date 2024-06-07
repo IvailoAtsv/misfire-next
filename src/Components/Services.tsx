@@ -9,11 +9,11 @@ type Service = {
 
 const services: Service[] = [
     { label: 'Тунинг', src: '/turbo.svg', link: '/tuning' },
+    { label: 'Пътна помощ', src: 'tow-truck.svg', link:'/towing' },
+    { label: 'Диагностика', src: '/diagnostics.svg' },
     { label: 'Общи ремонти', src: '/repair.svg' },
     { label: 'Обслужване', src: 'maintenance.svg' },
     { label: 'Гуми', src: 'tires.svg' },
-    { label: 'Пътна помощ', src: 'tow-truck.svg' },
-    { label: 'Диагностика', src: '/diagnostics.svg' },
 ]
 
 

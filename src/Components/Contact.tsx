@@ -45,33 +45,33 @@ export const Contact = () => {
                             Изпрати
                         </button>
                     </div>
-                    <section className="w-[100%] text-lg mt-auto flex-col gap-2 lg:flex-row py-2 border-t-2 border-accentDark font-light flex justify-between items-start lg:items-center">
+                    <section className="w-[100%] text-lg mt-auto flex-col gap-2 lg:flex-row py-2 border-t-2 border-accentDark font-extralight flex justify-between items-start lg:items-center">
                         <div className="flex flex-col gap-2 text-left justify-center items-start">
                             <a
-                                className="flex cursor-pointer  no-underline items-center gap-2"
+                                className="font-extralight flex cursor-pointer  no-underline items-center gap-2"
                                 target="_blank"
                                 href="https://www.google.com/maps/place/Автосервиз+Мисфайър+Misfire+Service,+NPZ+Iskar,+ul.+%225001-va%22+п.к.+25,+1528+Sofia/data=!4m2!3m1!1s0x40aa87fb134b59fd:0x774ef5f2cc3c7204?utm_source=mstt_1&entry=gps&g_ep=CAESCjExLjExOS4xMDEYACDXggMqJCw0NzA3NTkxNSw0NzA4NzExOCw0NzA4NDM4Nyw5NDIxMzE5NEICQkc%3D"
                             >
                                 <FaLocationDot /> ул. 5001 <FaLink />
                             </a>
 
-                            <p className="flex items-center gap-2">
+                            <p className="font-extralight flex items-center gap-2">
                                 <FaCity />
                                 жк. Дружба, София
                             </p>
                             <a
                                 target="_blank"
                                 href="tel:097648567539"
-                                className="cursor-pointer flex items-center gap-2"
+                                className="font-extralight cursor-pointer flex items-center gap-2"
                             >
                                 <FaPhone /> 097648567539 <FaLink />
                             </a>
                         </div>
                         <div className="flexflex-col text-left justify-center gap-2 items-start">
-                            <p className="font-semibold">Работно време:</p>
-                            <p>Понеделник-Петък: 10:00-20:00</p>
-                            <p>Събота: 10:00-14:00</p>
-                            <p>Неделя: Затворено</p>
+                            <p className="font-extralight">Работно време:</p>
+                            <p className='font-extralight '>Понеделник-Петък: 10:00-20:00</p>
+                            <p className='font-extralight '>Събота: 10:00-14:00</p>
+                            <p className='font-extralight '>Неделя: Затворено</p>
                         </div>
                     </section>
                 </form>
