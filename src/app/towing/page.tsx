@@ -7,7 +7,7 @@ const Towing = () => {
             <section className="w-full h-[600px] max-w-[1400px] flex flex-col lg:flex-row justify-center items-center">
                 <div className="text-white w-[100%] flex flex-1 flex-col justify-center items-center ">
                     <h1 className="w-[90%] my-2 font-semibold text-5xl">Пътна Помощ</h1>
-                    <p className="w-[90%] font-extralight text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени. Доверете ни се да ви приберем от пътя.</p>
+                    <p className="w-[90%] font-extralight text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</p>
                 </div>
                 <img src="towBg.webp" className="flex-1 w-[90%] h-[90%] lg:w-1/2 object-cover rounded-md" />
             </section>
