@@ -11,8 +11,8 @@ const Towing = () => {
                 </div>
                 <img src="towBg.webp" className="flex-1 w-[90%] h-[90%] lg:w-1/2 object-cover rounded-md" />
             </section>
-            <div className="w-full my-6 min-h-[150px] bg-background flex flex-col lg:flex-row">
-                <span className="flex-1 w-full h-[150px] text-white border-2 border-white  border-dashed border-opacity-15 py-4 flex justify-center lg:border-r-0 items-center gap-4">
+            <div className="border-2 border-white  border-dashed border-opacity-15 w-full my-6 min-h-[150px] bg-background flex flex-col lg:flex-row">
+                <span className="flex-1 w-full h-[150px] text-white py-4 flex justify-center lg:border-r-0 items-center gap-4">
                     <img src="/non-stop.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto " />
                      <div className="text-white">
                         <p className="opacity-75">работим всеки ден</p>
@@ -27,7 +27,7 @@ const Towing = () => {
                         <p className="text-lg font-semibold">позвънете на 097648567539</p>
                     </div>
                 </a>
-                <span className="flex-1 w-full h-[150px] text-white border-2 border-white  border-dashed border-opacity-15 py-4 flex justify-center lg:border-l-0 items-center gap-4">
+                <span className="flex-1 w-full h-[150px] text-white  py-4 flex justify-center items-center gap-4">
                     <img src="/quality.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto" />
                      <div className="text-white">
                         <p className="opacity-75">Работим по ДДС</p>
