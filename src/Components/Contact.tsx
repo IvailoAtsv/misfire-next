@@ -77,7 +77,7 @@ export const Contact = () => {
                 </form>
                     <img
                         src='/location.png'
-                        className="object-cover hidden md:block bg-transparent rounded-blob h-full flex-1"
+                        className="object-cover hidden lg:block bg-transparent rounded-blob h-full flex-1"
                         alt="location"
                     />
             </section>
