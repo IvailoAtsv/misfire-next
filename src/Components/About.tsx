@@ -3,9 +3,9 @@ export const About = () => {
     return (
         <section className="mb-36 bg-background text-white w-[90%] min-h-[80vh] max-w-[1400px]">
             <div className="max-w-[1400px] mx-auto">
-                <div className="flex flex-col-reverse md:flex-row items-center justify-center">
+                <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
                     <div className="w-full flex justify-center items-center lg:w-6/12">
-                        <section className="w-full flex h-[80vh] max-h-[900px] justify-start items-center gap-4 flex-1">
+                        <section className="w-full flex h-[80vh] max-h-[900px] justify-center lg:justify-start items-center gap-4 flex-1">
                             <div className="flex-col h-full gap-4 flex justify-center items-center">
                                 <img src="/img1.webp" className={imgStyles} />
                                 <img src="/img2.webp" className={imgStyles} />
