@@ -37,7 +37,7 @@ export const Services = () => {
 
 const ServiceCard: React.FC<Service> = (service) => {
     return (
-        <section
+        <a href={service?.link}
             className="p-6 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-35 flex-1 w-[98%] max-h-[350px] hover:translate-y-[-3px] hover:border-opacity-100 cursor-pointer"
         >
             <img src={service.src} className="h-[40%] transition duration-300 group-hover:scale-110 overflow-hidden" />
@@ -47,23 +47,6 @@ const ServiceCard: React.FC<Service> = (service) => {
                 animi rem similique veritatis nostrum recusandae magnam possimus
                 esse impedit ad.
             </p>
-
-            {/* <button
-                disabled={!service.link}
-                className={`py-2 mt-auto px-4 rounded-lg border-dashed font-extralight bg-background transition-all duration-300 hover:translate-y-[-3px] border border-white border-opacity-55  hover:border-accent hover:text-accent ${
-                    !service.link && 'opacity-0'
-                }`}
-            >
-                {service.link ? (
-                    <Link href={service.src} className="flex items-center gap-2">
-                        Научете повече <FaArrowRight />
-                    </Link>
-                ) : (
-                    <div className="flex items-center gap-2">
-                        Научете повече <FaArrowRight />
-                    </div>
-                )}
-            </button> */}
-        </section>
+        </a>
     )
 }
