@@ -14,7 +14,7 @@ export const Contact = () => {
         >
             <img
         src="wave.svg"
-        className="object-cover h-[190px] absolute bottom-[98%] w-[110%]"
+        className="object-cover h-[190px] absolute bottom-[98%] w-[100%]"
       />
 
       {/* <img
