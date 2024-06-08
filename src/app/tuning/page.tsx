@@ -10,11 +10,11 @@ interface ArticleProps {
 const Article: React.FC<ArticleProps> = ({ title, content, image, reverse }) => {
     return (
         <article className={`w-[90%] md:max-h-[550px] my-12 flex lg:gap-4 flex-col gap-2 justify-center items-center`}>
-             <h2 className="text-4xl font-bold text-textMain">
-                    {title}
-                </h2>
-            <div className={`w-full ${reverse? 'md:flex-row-reverse':'md:flex-row'} flex-col flex justify-center items-start gap-4`}>
-            <img src={image} alt="Tuning" className="flex-1 w-full h-[500px] lg:max-w-[50%] rounded-lg" />
+            <h2 className="text-4xl font-bold text-textMain">
+                {title}
+            </h2>
+            <div className={`w-full ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col flex justify-center items-start gap-4`}>
+                <img src={image} alt="Tuning" className="flex-1 w-full h-[500px] lg:max-w-[50%] rounded-lg" />
                 <p className="text-md text-justify hyphens-auto text-textMain opacity-85">
                     {content}
                 </p>
@@ -26,12 +26,32 @@ const Article: React.FC<ArticleProps> = ({ title, content, image, reverse }) => 
 const Tuning = () => {
     return (
         <section className="w-full mt-8 text-white flex flex-col justify-center items-center">
-            <section className="my-10 relative w-full bg-cover bg-no-repeat bg-center min-h-[55vh]" style={{ backgroundImage: "url('/tuning.mp4')" }}>
+            <section className="my-10 relative w-full bg-cover bg-no-repeat bg-center min-h-[55vh]">
+                {/* Video for larger screens */}
+                <video
+                    className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
+                    src="/tuning.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
+                {/* Video for mobile screens */}
+                <video
+                    className="md:hidden absolute top-0 left-0 w-full h-full object-cover"
+                    src="/mobileHero.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
                 <span className="w-full gap-8 h-full flex justify-center items-center flex-col absolute top-0 bg-black bg-opacity-50 ">
-                    <h2 className="text-4xl text-center font-semibold text-white ">Вдъхнете живот на автомобила си</h2>
-                    <p className='w-[90%] text-center opacity-75 md:w-[65%]'>Тунингът подобрява производителността, увеличава горивната ефективност, подобрява шофьорското изживяване, увеличава мощността на двигателя и позволява персонализиране според личните предпочитания, водещо до по-отзивчив и приятен автомобил.</p>
+                    <h2 className="text-4xl text-center font-semibold text-white">Вдъхнете живот на автомобила си</h2>
+                    <p className='w-[90%] text-center opacity-75 md:w-[65%]'>
+                        Тунингът подобрява производителността, увеличава горивната ефективност, подобрява шофьорското изживяване, увеличава мощността на двигателя и позволява персонализиране според личните предпочитания, водещо до по-отзивчив и приятен автомобил.
+                    </p>
                     {/* <img className="w-full opacity-35 object-cover" src='/heartline-turbo.png'/> */}
-                </span >
+                </span>
             </section>
             <section className='flex flex-col justify-center items-center max-w-7xl'>
                 <Article
