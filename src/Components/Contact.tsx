@@ -10,11 +10,11 @@ export const Contact = () => {
     return (
         <div
             id="contact"
-            className="relative w-full h-auto  bg-accent flex justify-center items-center"
+            className="relative max-w-[3440px] w-full h-auto  bg-accent flex justify-center items-center"
         >
             <img
         src="wave.svg"
-        className="object-cover h-[200px] absolute bottom-[98%] w-[110%]"
+        className="object-cover h-[190px] absolute bottom-[98%] w-[110%]"
       />
 
       {/* <img
