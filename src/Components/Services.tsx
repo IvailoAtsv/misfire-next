@@ -26,7 +26,7 @@ export const Services = () => {
             <section className="w-[90%] max-w-7xl flex-col items-center flex h-full justify-center">
                 <h2 className="self-center pb-8 text-5xl text-white">Услуги</h2>
                 <div className=' max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-2 xl:grid-cols-4'>
-                    {services.map(service => <ServiceCard src={service.src}
+                    {services.map(service => <ServiceCard key={Date.now()} src={service.src}
                                 label={service.label}
                                 link={service.link}/>)}
                 </div>

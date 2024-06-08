@@ -18,6 +18,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <title>Misfire</title>
+         <link rel="icon" href="/misfire-1 2.png" />
         <Navbar />
         {children}
         </body>
