@@ -8,7 +8,7 @@ export const Hero = () => {
     <main id="home" className="relative w-full h-[60vh]">
       {/* Video for larger screens */}
       <video
-        className="hidden md:block absolute top-0 left-0 w-full h-full object-cover"
+        className="hidden object-top md:block absolute top-0 left-0 w-full h-full object-cover"
         src="/hero.mp4"
         autoPlay
         loop
@@ -24,7 +24,7 @@ export const Hero = () => {
         muted
         playsInline
       />
-      <span className="absolute flex justify-center items-center top-0 left-0 w-full h-[60vh] bg-black bg-opacity-35"></span>
+      <span className="absolute flex justify-center items-center top-0 left-0 w-full h-[60vh] bg-black bg-opacity-30"></span>
       <div className="relative border-white border-dashed border-opacity-30 border-2 border-t-0 z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] max-w-7xl flex items-center justify-center">
         {/* <div className="absolute z-50 gap-2 top-10 right-[-18px] flex flex-col items-center justify-center">
           <FaInstagram className={iconStyle} size={32} />

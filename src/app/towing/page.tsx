@@ -8,7 +8,7 @@ const Towing = () => {
             <section className="mb-6 md:mb-0 w-full h-[500px] max-w-7xl flex flex-col lg:flex-row justify-center items-center">
                 <div className="text-white py-6 w-[100%] flex flex-1 flex-col justify-center items-center ">
                     <h1 className="w-[90%] my-2 text-center lg:text-left font-semibold text-5xl">Пътна Помощ</h1>
-                    <p className="w-[90%] font-extralight text-center lg:text-left text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</p>
+                    <p className="w-[90%] font-extralight opacity-75 text-center lg:text-left text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</p>
                 </div>
                 <img src="towBg.webp" className="flex-1 w-[90%] h-[90%] lg:w-1/2 object-cover rounded-md" />
             </section>

@@ -5,11 +5,12 @@ type Service = {
     label: string
     src: string
     link?: string
+    clickable?:boolean
 }
 
 const services: Service[] = [
-    { label: 'Тунинг', src: '/turbo.svg', link: '/tuning' },
-    { label: 'Пътна помощ', src: 'tow-truck.svg', link:'/towing' },
+    { label: 'Тунинг', src: '/turbo.svg', link: '/tuning', clickable:true },
+    { label: 'Пътна помощ', src: 'tow-truck.svg', link:'/towing', clickable:true },
     { label: 'Диагностика', src: '/diagnostics.svg' },
     { label: 'Общи ремонти', src: '/repair.svg' },
     { label: 'Обслужване', src: 'maintenance.svg' },
@@ -38,7 +39,7 @@ export const Services = () => {
 export const ServiceCard: React.FC<Service> = (service) => {
     return (
         <a href={service?.link}
-            className="p-6 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-35 flex-1 w-[98%] max-h-[350px] hover:translate-y-[-3px] hover:border-opacity-100 cursor-pointer"
+            className={`p-6 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-35 flex-1 w-[98%] max-h-[350px] hover:translate-y-[-3px] hover:border-opacity-100 ${service.clickable? 'cursor-pointer':''}`}
         >
             <img src={service.src} className="h-[40%] transition duration-300 group-hover:scale-110 overflow-hidden" />
             <h3 className="text-2xl font-medium" >{service.label}</h3>
