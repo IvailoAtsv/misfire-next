@@ -1,7 +1,28 @@
+'use client'
+import { motion, useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+
 const imgStyles = "transition duration-300 hover:scale-105 z-20 rounded-lg object-cover h-[50%]"
 export const About = () => {
+
+    const ref = useRef<HTMLDivElement>(null);
+    const { scrollYProgress } = useScroll({
+        target:ref,
+        offset:["0 1", "0.9 1"]
+    })
+
+   const scaleProgress = useTransform(scrollYProgress, [0,1], [0.7, 1])
+   const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5, 1])
+   
     return (
-        <section className="mb-36 bg-background text-white w-[90%] min-h-[80vh] max-w-7xl">
+        <motion.div  style={{
+            scale:scaleProgress,
+            opacity:opacityProgress,
+        }}
+        className=' max-w-7xl w-[90%]'
+            ref={ref}
+        >
+        <section className="mb-36 bg-background text-white w-full min-h-[80vh]">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
                     <div className="w-full flex justify-center items-center lg:w-6/12">
@@ -603,5 +624,6 @@ export const About = () => {
                 </div>
             </div>
         </section>
+        </motion.div>
     )
 }
