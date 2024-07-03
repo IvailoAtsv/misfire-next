@@ -10,10 +10,10 @@ type Service = {
 const ServiceCard: React.FC<Service> = (service) => {
 
    return (
-        <Animation opacity={0} start={1.5}>
+        <Animation>
         <a
             href={service?.link}
-            className={`p-6 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-35 flex-1 w-[98%] max-h-[350px] hover:translate-y-[-3px] hover:border-opacity-100 ${
+            className={`p-6 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-15 flex-1 w-[98%] h-[350px] hover:translate-y-[-3px] hover:border-opacity-100 ${
                 service.clickable ? 'cursor-pointer' : ''
             }`}
         >

@@ -6,22 +6,22 @@ import { useState } from 'react'
 import { IoMdClose } from 'react-icons/io'
 import { IoMenu } from 'react-icons/io5'
 
-const navBtnStyle = `hover:text-accent z-40 whitespace-nowrap bg-background text-lg p-2 md:p-1 transition duration-300 p-1 w-[100%] text-gray-800`
-const liStyles = `text-sm bg-background z-40 whitespace-nowrap block flex justify-center items-center my-1 md:m:0 'w-[90%] md:max-w-[150px] rounded`
+const navBtnStyle = `hover:text-accent z-40 whitespace-nowrap bg-background  text-lg p-2 md:p-1 transition duration-300 p-1 w-[100%] text-gray-800`
+const liStyles = `text-sm bg-background  z-40 whitespace-nowrap block flex justify-center items-center my-1 md:m:0 'w-[90%] md:max-w-[150px] rounded`
 
 export function Navbar({ }) {
     const [nav, setNav] = useState(false)
     // const navigate = useNavigate()
     return (
         <nav
-            className={`bg-background text-white font-light flex justify-center items-center fixed w-full z-50 top-0 start-0 shadow-xl`}
+            className={`bg-background   text-white font-light flex justify-center items-center fixed w-full z-50 top-0 start-0 shadow-xl`}
         >
             <div
                 className={`relative max-w-7xl z-50 flex justify-center items-center w-[90%] min-h-[70px] ${nav ? 'flex justify-center items-center flex-col' : ''
                     }`}
             >
                 {/* {nav && <div className='w-screen h-screen z-0 bg-black opacity-40'></div>} */}
-                <Link onClick={()=>setNav(false)} href={"/"}>
+                <Link className='bg-background ' onClick={()=>setNav(false)} href={"/"}>
                     <Image alt='logo' src="/misfire-1 2.png" width={500} height={500} className={`absolute h-full max-h-[60px] py-1 w-auto top-[-0px] left-0 `} />
                 </Link>
                 {/* <img
@@ -39,7 +39,7 @@ export function Navbar({ }) {
                     className={`transition-all z-50 duration-300 ease-out overflow-hidden sm:overflow-auto w-full flex flex-col ${nav ? 'h-auto min-h-[30vh] mt-20' : 'md:h-auto h-0'} md:flex md:flex-row mx-auto  md:justify-end md:gap-4 justify-start items-center rounded-lg`}
                 >
                     <li className={liStyles}>
-                        <Link onClick={()=>setNav(false)} href="/">
+                        <Link className='bg-background ' onClick={()=>setNav(false)} href="/">
                             <button
 
                                 className={navBtnStyle}
@@ -49,7 +49,7 @@ export function Navbar({ }) {
                         </Link>
                     </li>
                      <li className={liStyles}>
-                        <Link onClick={()=>setNav(false)} href="/tuning">
+                        <Link className='bg-background ' onClick={()=>setNav(false)} href="/tuning">
                             <button
 
                                 className={navBtnStyle}
@@ -59,7 +59,7 @@ export function Navbar({ }) {
                         </Link>
                     </li>
                      <li className={liStyles}>
-                        <Link onClick={()=>setNav(false)} href="/towing">
+                        <Link className='bg-background ' onClick={()=>setNav(false)} href="/towing">
                             <button
 
                                 className={navBtnStyle}

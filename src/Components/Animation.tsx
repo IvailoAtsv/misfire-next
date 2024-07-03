@@ -10,14 +10,14 @@ type AnimationProps = {
     maxW?: string;
 }
 
-const Animation: React.FC<AnimationProps> = ({ maxW='7xl', height='auto', children, start = 0.9, opacity = 0 }) => {
+const Animation: React.FC<AnimationProps> = ({ maxW='7xl', height='auto', children, start = 1.2, opacity = 0 }) => {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["0 1", `${start} 1`]
     });
 
-    const yProgress = useTransform(scrollYProgress, [0, 1], [100, 0]); // Move up from 50px to 0px
+    const yProgress = useTransform(scrollYProgress, [0, 1], [100, 0]); // Move up from 100px to 0px
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [opacity, 1]);
 
     return (

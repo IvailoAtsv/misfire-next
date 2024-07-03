@@ -16,7 +16,7 @@ const services: Service[] = [
     { label: 'Диагностика', src: '/diagnostics.svg' },
     { label: 'Общи ремонти', src: '/repair.svg' },
     { label: 'Обслужване', src: 'maintenance.svg' },
-    { label: 'Гуми', src: 'tires.svg' },
+    { label: 'Монтаж, Демонтаж и Баланс', src: 'tires.svg' },
 ];
 
 export const Services = () => {
@@ -39,8 +39,7 @@ export const Services = () => {
             className="w-full h-auto mb-10 mt-5 py-10 flex flex-col justify-center items-center bg-background"
         >
             {/* <motion.section initial="hidden" animate="visible" variants={buttonVariants} className="w-[90%] max-w-7xl flex-col items-center flex h-full justify-center"> */}
-                <Animation>
-                <h2 className="self-center opacity-80 pb-8 text-5xl w-full text-center text-white">Услуги</h2>
+                <Animation><h2 className="self-center opacity-80 pb-8 text-5xl w-full text-center text-white">Услуги</h2></Animation>
                 <div className="max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-2 xl:grid-cols-4">
                     {services.map((service, index) => (
                         <ServiceCard
@@ -52,7 +51,6 @@ export const Services = () => {
                         />
                     ))}
                 </div>
-                </Animation>
             {/* </motion.section> */}
         </div>
     );
