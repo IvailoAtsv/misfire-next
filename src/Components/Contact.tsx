@@ -9,7 +9,7 @@ export const inputStyles =
     'bg-accentDark text-lg outline-white p-3 rounded-lg w-[100%]'
 export const Contact = () => {
     return (
-    <Animation maxW='3440px' opacity={0.6} start={0.5}>
+    <Animation maxW='3440px' moveY={180} opacity={0.6} start={0.7}>
         <div
             id="contact"
             className="relative max-w-[3440px] w-full h-auto  bg-accent flex justify-center items-center"
@@ -49,6 +49,11 @@ export const Contact = () => {
                     </div>
                     <section className="w-[100%] text-lg mt-auto flex-col gap-2 lg:flex-row py-2 border-t-2 border-accentDark font-extralight whitespace-nowrap flex justify-between items-start lg:items-center">
                         <div className="flex flex-col gap-2 text-left justify-center items-start">
+                           
+                            <p className="font-extralight whitespace-nowrap flex items-center gap-2">
+                                <FaCity />
+                                жк. Дружба, София
+                            </p>
                             <a
                                 className="font-extralight whitespace-nowrap flex cursor-pointer  no-underline items-center gap-2"
                                 target="_blank"
@@ -57,10 +62,6 @@ export const Contact = () => {
                                 <FaLocationDot /> ул. 5001 <FaLink />
                             </a>
 
-                            <p className="font-extralight whitespace-nowrap flex items-center gap-2">
-                                <FaCity />
-                                жк. Дружба, София
-                            </p>
                             <a
                                 target="_blank"
                                 href="tel:097648567539"

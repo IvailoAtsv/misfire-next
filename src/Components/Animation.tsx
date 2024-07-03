@@ -8,16 +8,17 @@ type AnimationProps = {
     opacity?: number;
     height?: string;
     maxW?: string;
+    moveY?:number;
 }
 
-const Animation: React.FC<AnimationProps> = ({ maxW='7xl', height='auto', children, start = 1.2, opacity = 0 }) => {
+const Animation: React.FC<AnimationProps> = ({ moveY = 100,maxW='7xl', height='auto', children, start = 1.2, opacity = 0 }) => {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,
         offset: ["0 1", `${start} 1`]
     });
 
-    const yProgress = useTransform(scrollYProgress, [0, 1], [100, 0]); // Move up from 100px to 0px
+    const yProgress = useTransform(scrollYProgress, [0, 1], [moveY, 0]); // Move up from 100px to 0px
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [opacity, 1]);
 
     return (
