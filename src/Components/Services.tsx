@@ -8,17 +8,20 @@ type Service = {
     src: string;
     link?: string;
     clickable?: boolean;
+    description:string;
 };
 
 const services: Service[] = [
-    { label: 'Тунинг', src: '/turbo.svg', link: '/tuning', clickable: true },
-    { label: 'Пътна помощ', src: 'tow-truck.svg', link: '/towing', clickable: true },
-    { label: 'Диагностика', src: '/diagnostics.svg' },
-    { label: 'Общи ремонти', src: '/repair.svg' },
-    { label: 'Обслужване', src: 'maintenance.svg' },
-    { label: 'Монтаж, Демонтаж и Баланс', src: 'tires.svg' },
-    { label: 'Продажба на джанти', src: 'rims.svg' },
+    { label: 'Тунинг', description:'Предлагаме висококачествени тунинг услуги за всички видове автомобили. Доверете се на нашите експерти за оптимална производителност.', src: '/turbo.svg', link: '/tuning', clickable: true },
+    { label: 'Пътна помощ', description:'Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени. Тел за връзка: 097648567539', src: 'tow-truck.svg', link: '/towing', clickable: true },
+    { label: 'Диагностика', description:'Прецизна диагностика на вашия автомобил с модерна апаратура и опитни техници. Осигуряваме точност и професионализъм.', src: '/diagnostics.svg' },
+    { label: 'Общи ремонти', description:'Извършваме всички видове общи ремонти за вашия автомобил, с гаранция за качество и изгодни цени. Доверете се на нас.', src: '/repair.svg' },
+    { label: 'Обслужване', description:'Пълно обслужване на вашия автомобил, включително смяна на масла, филтри и други консумативи. Висококачествено обслужване.', src: 'maintenance.svg' },
+    { label: 'Монтаж, Демонтаж и Баланс', description:'Професионален монтаж, демонтаж и баланс на гуми за максимална безопасност и комфорт. Осигуряваме качествена услуга.', src: 'tires-repair.svg' },
+    { label: 'Продажба на гуми', description:'Продаваме всички видове и размери гуми според запитването на клиента. Осигуряваме качество и надеждност.', src: 'tires.svg' },
+    { label: 'Продажба на джанти', description:'Продаваме разнообразни висококачествени джанти за всички видове автомобили. Осигуряваме стил и безопасност.', src: 'rims.svg' },
 ];
+
 
 export const Services = () => {
      const buttonVariants = {
@@ -44,6 +47,7 @@ export const Services = () => {
                 <div className="max-w-7xl w-full mx-auto px-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-2 xl:grid-cols-4">
                     {services.map((service, index) => (
                         <ServiceCard
+                        description={service.description}
                             key={index}
                             src={service.src}
                             label={service.label}

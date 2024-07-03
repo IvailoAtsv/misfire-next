@@ -588,18 +588,15 @@ export const About = () => {
                         </section>
                     </div>
                     <div className="w-full z-20 bg-transparent text-center md:text-left py-4 flex-1">
-                        <div className="mt-10 lg:mt-0">
+                        <div className="mt-10 lg:mt-0 w-full">
                             <span className="mb-4 bg-transparent block text-xl font-light text-accent">
                                 Защо да изберете нас?
                             </span>
-                            <h2 className="mb-5 bg-transparent text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                                Габчо мисли си текстовете, Габчо
+                            <h2 className="mb-5 bg-transparent text-3xl font-bold text-dark text-white sm:text-[40px]/[48px]">
+                                Вашата кола заслужава най-доброто, а ние сме най-добрите
                             </h2>
                             <p className="mb-5 bg-transparent opacity-75">
-                                It is a long established fact that a reader will
-                                be distracted by the readable content of a page
-                                when looking at its layout. The point of using
-                                Lorem Ipsum is that it has a more-or-less.
+                               Предлагаме професионални услуги, гаранция за качество и конкурентни цени. Ако се доверите на нашия опит и знания с вашия автомобил, Вие ще искате да се върнете, но авотмобила ви няма да ви дава повод.
                             </p>
 
                         </div>

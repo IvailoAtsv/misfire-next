@@ -5,6 +5,7 @@ type Service = {
     src: string;
     link?: string;
     clickable?: boolean;
+    description:string
 };
 
 const ServiceCard: React.FC<Service> = (service) => {
@@ -22,10 +23,8 @@ const ServiceCard: React.FC<Service> = (service) => {
                 className="h-[40%] transition duration-300 group-hover:scale-110 overflow-hidden"
             />
             <h3 className="text-2xl text-center font-medium">{service.label}</h3>
-            <p className="text-sm w-full text-justify hyphens-auto text-white font-extralight opacity-75">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                animi rem similique veritatis nostrum recusandae magnam possimus
-                esse impedit ad.
+            <p className="text-sm w-full px-2 text-justify text-white font-extralight opacity-75">
+                {service.description}
             </p>
         </a>
         </Animation>

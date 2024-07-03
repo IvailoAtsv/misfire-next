@@ -74,8 +74,8 @@ export const Hero = () => {
           <FaInstagram className={iconStyle} size={32} />
         </div> */}
         <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="font-semibold tracking-wider leading-tight text-white text-h1clamp">Misfire </motion.h1>
-        <motion.p initial="hidden" animate="visible" variants={h1Variants} className="text-white opacity-80 w-[80%] md:w-[50%] text-center mb-4 font-light">
-          Трябват ми текстове Габо
+        <motion.p initial="hidden" animate="visible" variants={h1Variants} className="text-white opacity-80 w-[80%] md:w-[50%] text-center mb-4 text-lg font-light">
+          Ние сме вашият доверен партньор за тунинг, пътна помощ, гуми и джанти.
         </motion.p>
         <motion.div
           initial="hidden"

@@ -9,7 +9,7 @@ export const inputStyles =
     'bg-accentDark text-lg outline-white p-3 rounded-lg w-[100%]'
 export const Contact = () => {
     return (
-    <Animation maxW='3440px' moveY={180} opacity={0.6} start={0.7}>
+    <Animation maxW='3440px' moveY={120} opacity={0.6} start={0.7}>
         <div
             id="contact"
             className="relative max-w-[3440px] w-full h-auto  bg-accent flex justify-center items-center"
