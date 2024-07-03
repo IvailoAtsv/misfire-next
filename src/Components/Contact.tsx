@@ -25,7 +25,7 @@ export const Contact = () => {
       /> */}
             <section className="w-[90%] gap-4 lg:max-h-[600px] bg-accent rounded-lg max-w-7xl h-[90vh] flex-col lg:flex-row items-center flex justify-between">
                 <form className="text-white max-w-3xl font-normal w-full flex-1 h-full flex pl-0 p-8 gap-4 flex-col justify-between items-start">
-                    <h2 className="text-5xl mb-auto font-bold">Свържете се с нас!</h2>
+                    <h2 className="text-3xl mb-auto font-bold">Свържете се с нас!</h2>
                     <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
                         <FormPair>
                             <label className={labelStyles}>Име:</label>
