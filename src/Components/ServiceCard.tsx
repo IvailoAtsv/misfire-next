@@ -1,6 +1,4 @@
-'use client'
-import { motion, useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
-import { useEffect, useRef } from 'react';
+import Animation from './Animation';
 
 type Service = {
     label: string;
@@ -11,22 +9,8 @@ type Service = {
 
 const ServiceCard: React.FC<Service> = (service) => {
 
-    const ref = useRef<HTMLDivElement>(null);
-    const { scrollYProgress } = useScroll({
-        target:ref,
-        offset:["0 1", "0.9 1"]
-    })
-
-   const scaleProgress = useTransform(scrollYProgress, [0,1], [0.7, 1])
-   const opacityProgress = useTransform(scrollYProgress, [0,1], [0, 1])
-    
    return (
-        <motion.div  style={{
-            scale:scaleProgress,
-            opacity:opacityProgress,
-        }}
-            ref={ref}
-        >
+        <Animation opacity={0} start={1.5}>
         <a
             href={service?.link}
             className={`p-6 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-35 flex-1 w-[98%] max-h-[350px] hover:translate-y-[-3px] hover:border-opacity-100 ${
@@ -44,7 +28,7 @@ const ServiceCard: React.FC<Service> = (service) => {
                 esse impedit ad.
             </p>
         </a>
-        </motion.div>
+        </Animation>
     );
 };
 

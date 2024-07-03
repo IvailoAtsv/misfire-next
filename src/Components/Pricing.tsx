@@ -1,29 +1,12 @@
-'use client'
-import { motion, useAnimation, useInView, useScroll, useTransform } from 'framer-motion';
-import { useEffect, useRef } from 'react';
 import React from "react"
+import Animation from "./Animation";
 
-const Pricing:React.FC = () =>{
-    const ref = useRef<HTMLDivElement>(null);
-    const { scrollYProgress } = useScroll({
-        target:ref,
-        offset:["0 1", "1 1"]
-    })
-
-   const scaleProgress = useTransform(scrollYProgress, [0,1], [0.7, 1])
-   const opacityProgress = useTransform(scrollYProgress, [0,1], [0, 1])
-    
+const Pricing:React.FC = () =>{ 
    return (
-        <motion.div  style={{
-            scale:scaleProgress,
-            opacity:opacityProgress,
-        }}
-        className='w-[90%] max-w-7xl'
-            ref={ref}
-        > 
+        <Animation> 
         <section className="my-6 w-full">
         <h2 className="text-white w-full text-center text-3xl font-semibold mb-4">Ценoразпис</h2>
-        <div className="bg-background p-6 rounded-md shadow-md text-white">
+        <div className="bg-background p-6 rounded-md text-white">
             <table className="w-full font-extralight text-left border-collapse">
                 <thead>
                     <tr>
@@ -53,7 +36,7 @@ const Pricing:React.FC = () =>{
             <p className="mt-4 text-opacity-75 text-accent text-lg">Всички цени са с ДДС и могат да бъдат предоговаряни.</p>
         </div>
     </section>
-    </motion.div>
+    </Animation>
    )
 }
 export default Pricing

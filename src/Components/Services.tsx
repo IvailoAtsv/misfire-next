@@ -1,4 +1,7 @@
+'use client'
+import { motion } from "framer-motion";
 import ServiceCard from "./ServiceCard";
+import Animation from "./Animation";
 
 type Service = {
     label: string;
@@ -17,13 +20,27 @@ const services: Service[] = [
 ];
 
 export const Services = () => {
+     const buttonVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 0.85,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 10,
+        delay: 1,
+      },
+    },
+  };
     return (
         <div
             id="services"
             className="w-full h-auto mb-10 mt-5 py-10 flex flex-col justify-center items-center bg-background"
         >
-            <section className="w-[90%] max-w-7xl flex-col items-center flex h-full justify-center">
-                <h2 className="self-center pb-8 text-5xl text-white">Услуги</h2>
+            {/* <motion.section initial="hidden" animate="visible" variants={buttonVariants} className="w-[90%] max-w-7xl flex-col items-center flex h-full justify-center"> */}
+                <Animation>
+                <h2 className="self-center opacity-80 pb-8 text-5xl w-full text-center text-white">Услуги</h2>
                 <div className="max-w-7xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-2 xl:grid-cols-4">
                     {services.map((service, index) => (
                         <ServiceCard
@@ -35,7 +52,8 @@ export const Services = () => {
                         />
                     ))}
                 </div>
-            </section>
+                </Animation>
+            {/* </motion.section> */}
         </div>
     );
 };

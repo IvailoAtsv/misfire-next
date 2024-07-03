@@ -2,19 +2,21 @@ import { ReactNode } from 'react'
 import location from '../images/location.png'
 import { FaPhone, FaCity, FaLink } from 'react-icons/fa'
 import { FaLocationDot } from 'react-icons/fa6'
+import Animation from './Animation'
 
 export const labelStyles = 'text-2xl text-white'
 export const inputStyles =
     'bg-accentDark text-lg outline-white p-3 rounded-lg w-[100%]'
 export const Contact = () => {
     return (
+    <Animation maxW='3440px' opacity={0.6}>
         <div
             id="contact"
             className="relative max-w-[3440px] w-full h-auto  bg-accent flex justify-center items-center"
         >
             <img
         src="wave.svg"
-        className="object-cover h-[190px] absolute bottom-[98%] w-[100%]"
+        className="object-cover h-[200px] absolute bottom-[99%] w-[100%]"
       />
 
       {/* <img
@@ -68,10 +70,10 @@ export const Contact = () => {
                             </a>
                         </div>
                         <div className="flexflex-col text-left justify-center gap-2 items-start">
-                            <p className="font-extralight whitespace-nowrap">Работно време:</p>
-                            <p className='font-extralight whitespace-nowrap '>Понеделник-Петък: 10:00-20:00</p>
-                            <p className='font-extralight whitespace-nowrap '>Събота: 10:00-14:00</p>
-                            <p className='font-extralight whitespace-nowrap '>Неделя: Затворено</p>
+                            <p className="text-xl font-bold whitespace-nowrap">Работно време:</p>
+                            <p className='font-extralight whitespace-nowrap opacity-90'>Понеделник-Петък: 10:00-20:00</p>
+                            <p className='font-extralight whitespace-nowrap opacity-90'>Събота: 10:00-14:00</p>
+                            <p className='font-extralight whitespace-nowrap opacity-90'>Неделя: Затворено</p>
                         </div>
                     </section>
                 </form>
@@ -81,7 +83,9 @@ export const Contact = () => {
                         alt="location"
                     />
             </section>
+
         </div>
+                </Animation>
     )
 }
 export const FormPair = ({ children }: { children: ReactNode }) => {

@@ -1,27 +1,6 @@
+import Article from '@/Components/Article';
+import TuningHero from '@/Components/TuningHero';
 import React from 'react';
-
-interface ArticleProps {
-    title: string;
-    content: string;
-    image: string;
-    reverse?: boolean;
-}
-
-const Article: React.FC<ArticleProps> = ({ title, content, image, reverse }) => {
-    return (
-        <article className={`w-[90%] md:max-h-[550px] my-12 flex lg:gap-4 flex-col gap-2 justify-center items-center`}>
-            <h2 className="text-4xl font-bold text-textMain">
-                {title}
-            </h2>
-            <div className={`w-full ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} flex-col flex justify-center items-start gap-4`}>
-                <img src={image} alt="Tuning" className="flex-1 w-full h-[500px] lg:max-w-[50%] rounded-lg" />
-                <p className="text-md text-justify hyphens-auto text-textMain opacity-85">
-                    {content}
-                </p>
-            </div>
-        </article>
-    );
-};
 
 const Tuning = () => {
     return (
@@ -45,15 +24,9 @@ const Tuning = () => {
                     muted
                     playsInline
                 />
-                <span className="w-full gap-8 h-full flex justify-center items-center flex-col absolute top-0 bg-black bg-opacity-50 ">
-                    <h2 className="text-4xl text-center font-semibold text-white">Вдъхнете живот на автомобила си</h2>
-                    <p className='w-[90%] text-center opacity-75 md:w-[65%]'>
-                        Тунингът подобрява производителността, увеличава горивната ефективност, подобрява шофьорското изживяване, увеличава мощността на двигателя и позволява персонализиране според личните предпочитания, водещо до по-отзивчив и приятен автомобил.
-                    </p>
-                    {/* <img className="w-full opacity-35 object-cover" src='/heartline-turbo.png'/> */}
-                </span>
+               <TuningHero />
             </section>
-            <section className='flex flex-col justify-center items-center max-w-7xl'>
+            <section className='flex flex-col justify-center items-center gap-6 max-w-7xl'>
                 <Article
                     title="Тунинг за дизелови двигатели"
                     content="Тунингът на дизелов двигател включва модификация на параметрите и компонентите му за подобряване на производителността и ефективността. Това може да включва ремапинг на ECU (контролния блок на двигателя), подобряване на турбокомпресора, изпускателната система и инсталиране на въздушни филтри за висока производителност.
@@ -75,7 +48,7 @@ const Tuning = () => {
 Тунингът също така подобрява отзивчивостта на двигателя, осигурявайки по-гладко и динамично шофиране. Оптимизирането на работата на двигателя може да намали износването на критичните компоненти, като потенциално удължава живота му. Освен това, тунингът позволява персонализиране на производителността според нуждите и предпочитанията на шофьора.
 
 В заключение, тунингът на бензинов двигател може значително да подобри шофьорското изживяване, правейки автомобила по-мощен, ефективен и приятен за шофиране."
-                    image="/diesel.webp"
+                    image="/petrol.webp"
                 />
             </section>
         </section>
