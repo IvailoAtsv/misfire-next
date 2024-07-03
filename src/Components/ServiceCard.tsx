@@ -21,7 +21,7 @@ const ServiceCard: React.FC<Service> = (service) => {
                 src={service.src}
                 className="h-[40%] transition duration-300 group-hover:scale-110 overflow-hidden"
             />
-            <h3 className="text-2xl font-medium">{service.label}</h3>
+            <h3 className="text-2xl text-center font-medium">{service.label}</h3>
             <p className="text-sm w-full text-justify hyphens-auto text-white font-extralight opacity-75">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
                 animi rem similique veritatis nostrum recusandae magnam possimus
