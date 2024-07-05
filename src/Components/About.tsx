@@ -5,7 +5,7 @@ export const About = () => {
 
     return (
         <Animation opacity={0.3}>
-        <section className="w-full px-4 mb-36 bg-background text-white min-h-[80vh]">
+        <section className="w-full px-4 mt-10 mb-36 bg-background text-white min-h-[80vh]">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
                     <div className="w-full flex justify-center items-center flex-1 lg:w-6/12">

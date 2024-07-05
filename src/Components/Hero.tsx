@@ -57,9 +57,9 @@ export const Hero = () => {
           variants={buttonVariants}
           className="flex flex-col md:flex-row w-auto items-center justify-center gap-2"
         >
-          <button className="flex-1 w-full whitespace-nowrap hover:bg-accentDark hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-accent border border-accent hover:border-accentDark px-6 py-3 text-white font-semibold text-md rounded-sm">
-            <a href="#contact">Свържете се с нас!</a>
-          </button>
+          <Link href='/#contact-form' className="flex-1 w-full whitespace-nowrap hover:bg-accentDark hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-accent border border-accent hover:border-accentDark px-6 py-3 text-white font-semibold text-md rounded-sm">
+            Свържете се с нас!
+          </Link>
           <Link href="/tuning" className="flex-1 w-full whitespace-nowrap hover:bg-accent hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-transparent border border-accent px-6 py-3 text-white font-semibold text-md rounded-sm">
             Информация за тунинг
           </Link>
