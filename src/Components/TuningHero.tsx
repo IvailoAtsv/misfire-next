@@ -9,7 +9,7 @@ import img4 from '../../public/img4.webp';
 import img5 from '../../public/img5.webp';
 import img6 from '../../public/img6.webp';
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [ img2, img3, img4, img5];
 // const images = [img2];
 const TuningHero = () => {
   const buttonVariants = {

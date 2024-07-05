@@ -5,7 +5,7 @@ const Footer = () => {
   const socialIconStyle = "hover:text-accent transition duration-300 text-white";
 
   return (
-    <footer className="w-full bg-black md:pt-8 pb-2 md:px-4 pt-4 px-2 text-white">
+    <footer className="w-full bg-black min-h-min md:pt-8 pb-2 md:px-4 pt-4 px-2 text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 flex-1 w-full md:mb-0 text-center md:text-left">
           <h2 className="text-2xl font-semibold">Misfire</h2>

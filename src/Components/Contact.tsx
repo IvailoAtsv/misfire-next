@@ -23,7 +23,7 @@ export const Contact = () => {
         src="wave-8.svg"
         className=" object-cover rotate-180 absolute h-[150px] top-[98%] w-full"
       /> */}
-            <section className="w-full gap-2 lg:max-h-[600px] bg-accent rounded-lg max-w-7xl h-[80vh] flex-col lg:flex-row items-center flex justify-center">
+            <section className="w-full gap-2 lg:max-h-[600px] bg-accent rounded-lg max-w-7xl min-h-[70vh] flex-col lg:flex-row items-center flex justify-center">
                 <form className="text-white max-w-3xl font-normal w-full flex-1 h-full flex p-6 gap-3 flex-col justify-between items-start">
                     <h2 className="text-3xl mb-auto font-bold">Свържете се с нас!</h2>
                     <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
@@ -80,7 +80,7 @@ export const Contact = () => {
                 </form>
                     <img
                         src='/location.png'
-                        className="object-cover hidden lg:block bg-transparent rounded-blob h-[80%]"
+                        className="object-cover hidden lg:block bg-transparent rounded-blob max-h-[500px] h-[80%]"
                         alt="location"
                     />
             </section>
