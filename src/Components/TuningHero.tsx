@@ -58,7 +58,7 @@ const TuningHero = () => {
       <span className="absolute text-white top-0 left-[50%] translate-x-[-50%] border-white z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] max-w-7xl flex items-center justify-center">
         <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="text-h1clamp text-center font-semibold text-white">Тунинг</motion.h1>
         <motion.p initial="hidden" animate="visible" variants={h2Variants} className='w-[90%] text-center opacity-75 md:w-[55%]'>
-          Тунингът подобрява производителността, увеличава горивната ефективност, подобрява шофьорското изживяване, увеличава мощността на двигателя и позволява персонализиране според личните предпочитания, водещо до по-отзивчив и приятен автомобил.
+          Тунингът подобрява производителността, увеличава горивната ефективност, подобрява шофьорското изживяване, увеличава мощността на двигателя, което води до по-отзивчив и приятен автомобил.
         </motion.p>
       </span>        {/* <img className="w-full opacity-35 object-cover" src='/heartline-turbo.png'/> */}
 
