@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const TuningServices: React.FC = () => {
   return (
-    <section className="my-6 w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-2">
+    <section className="my-6 w-full container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-2">
         <Animation>
         <div className="bg-backgroundDark z-20 relative p-4 bg-opacity-45 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">          
           <img

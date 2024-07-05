@@ -28,6 +28,9 @@ const config: Config = {
                 blob: '25% 75% 35% 65% / 60% 23% 77% 40%',
                 blobHover: '35% 65% 32% 60% / 65% 27% 67% 50%',
             },
+            maxWidth:{
+            container:'1440px'  
+            },
             backgroundImage: {
                 hero: "url('/src/images/hero.jpg')",
                 heroPhone: "url('/src/images/heroPhone.jpg')",

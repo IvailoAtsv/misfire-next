@@ -55,7 +55,7 @@ const TuningHero = () => {
     <section className="relative w-full h-[60vh] flex flex-col justify-center items-center">
       <Carousel autoPlayInterval={3500} hasIndexBoard={false} hasMediaButton={false} images={images} hasSizeButton={false} isAutoPlaying={true} isLoop={true} hasThumbnails={false} hasLeftButton={false} hasRightButton={false} style={{ width: "100%", height: '60vh', position: 'relative' }} />
       <span className="absolute flex justify-center items-center top-0 left-0 w-full h-[60vh] bg-black bg-opacity-55"></span>
-      <span className="absolute text-white top-0 left-[50%] translate-x-[-50%] border-white z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] max-w-7xl flex items-center justify-center">
+      <span className="absolute text-white top-0 left-[50%] translate-x-[-50%] border-white z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] container flex items-center justify-center">
         <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="text-h1clamp text-center font-semibold text-white">Тунинг</motion.h1>
         <motion.p initial="hidden" animate="visible" variants={h2Variants} className='w-[90%] text-center opacity-75 md:w-[55%]'>
           Тунингът подобрява производителността, увеличава горивната ефективност, подобрява шофьорското изживяване, увеличава мощността на двигателя, което води до по-отзивчив и приятен автомобил.

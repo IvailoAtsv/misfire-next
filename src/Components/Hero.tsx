@@ -46,7 +46,7 @@ export const Hero = () => {
       {/* Video for larger screens */}
      <Carousel autoPlayInterval={3500} hasIndexBoard={false} hasMediaButton={false} images={images} hasSizeButton={false} isAutoPlaying={true} isLoop={true} hasThumbnails={false} hasLeftButton={false} hasRightButton={false} style={{width:"100%", height:'70vh', position:'relative'}}/>
       <span className="absolute flex justify-center items-center top-0 left-0 w-full h-[70vh] bg-black bg-opacity-55"></span>
-      <div className="absolute top-0 left-[50%] translate-x-[-50%] z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] max-w-7xl flex items-center justify-center">
+      <div className="absolute top-0 left-[50%] translate-x-[-50%] z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] container flex items-center justify-center">
         <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="font-semibold tracking-wider leading-tight text-white text-h1clamp">Misfire</motion.h1>
         <motion.p initial="hidden" animate="visible" variants={h1Variants} className="text-white opacity-80 w-[70%] md:w-[50%] text-center mb-4 text-lg font-light">
           Ние сме вашият доверен партньор за тунинг, пътна помощ и гуми.

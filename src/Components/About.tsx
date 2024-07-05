@@ -6,7 +6,7 @@ export const About = () => {
     return (
         <Animation opacity={0.3}>
         <section className="w-full px-4 mt-10 mb-36 bg-background text-white min-h-[80vh]">
-            <div className="max-w-7xl mx-auto">
+            <div className="container mx-auto">
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
                     <div className="w-full flex justify-center items-center flex-1 lg:w-6/12">
                         <section className="w-full flex h-[80vh] max-h-[900px] justify-center lg:justify-start items-center gap-4 flex-1">

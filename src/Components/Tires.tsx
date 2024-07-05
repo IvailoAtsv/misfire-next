@@ -24,11 +24,11 @@ const TireRequestForm: React.FC = () => {
 
   return (
     <Animation maxW='3440px'>
-    <section className="bg-opacity-40 my-6 w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-2 bg-backgroundDark p-6 rounded-lg text-white">
+    <section className="bg-opacity-40 my-6 w-full container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-2 bg-backgroundDark p-6 rounded-lg text-white">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-4">
         <h3 className="text-4xl mb-4 font-semibold">Запитване за гуми</h3>
         <div>
-          <label htmlFor="width" className="block text-lg font-light">*Ширина:</label>
+          <label htmlFor="width" className="block text-lg font-light">* Ширина:</label>
           <input
             type="text"
             id="width"
@@ -39,7 +39,7 @@ const TireRequestForm: React.FC = () => {
           {errors.width && <p className="text-red-500 text-sm mt-1">{errors.width.message}</p>}
         </div>
         <div>
-          <label htmlFor="height" className="block text-lg font-light">*Височина:</label>
+          <label htmlFor="height" className="block text-lg font-light">* Височина:</label>
           <input
             type="text"
             id="height"
@@ -50,7 +50,7 @@ const TireRequestForm: React.FC = () => {
           {errors.height && <p className="text-red-500 text-sm mt-1">{errors.height.message}</p>}
         </div>
         <div>
-          <label htmlFor="radius" className="block text-lg font-light">*Радиус:</label>
+          <label htmlFor="radius" className="block text-lg font-light">* Радиус:</label>
           <input
             type="text"
             id="radius"
@@ -61,7 +61,7 @@ const TireRequestForm: React.FC = () => {
           {errors.radius && <p className="text-red-500 text-sm mt-1">{errors.radius.message}</p>}
         </div>
         <div>
-          <label htmlFor="phoneNumber" className="block text-lg font-light">*Телефон за връзка:</label>
+          <label htmlFor="phoneNumber" className="block text-lg font-light">* Телефон за връзка:</label>
           <Controller
             name="phoneNumber"
             control={control}

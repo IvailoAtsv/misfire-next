@@ -17,7 +17,7 @@ export function Navbar({ }) {
             className={`bg-background   text-white font-light flex justify-center items-center fixed w-full z-50 top-0 start-0 shadow-xl`}
         >
             <div
-                className={`relative max-w-7xl z-50 flex justify-center items-center w-[95%] min-h-[70px] ${nav ? 'flex justify-center items-center flex-col' : ''
+                className={`relative container z-50 flex justify-center items-center w-[95%] min-h-[70px] ${nav ? 'flex justify-center items-center flex-col' : ''
                     }`}
             >
                 {/* {nav && <div className='w-screen h-screen z-0 bg-black opacity-40'></div>} */}
