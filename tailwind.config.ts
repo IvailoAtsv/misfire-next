@@ -16,6 +16,7 @@ const config: Config = {
                 gray: '#21222f',
                 textGray: '#d9d9d9',
                 background: '#1a2635',
+                backgroundDark: '#2b3a50',
             },
               fontSize: {
         h1clamp: "clamp(4rem, 6.5vw, 10rem)",

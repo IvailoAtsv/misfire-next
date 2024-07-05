@@ -1,46 +1,20 @@
 'use client'
 import React from "react";
-import { motion } from "framer-motion";
 import Animation from "./Animation";
 
 const TuningServices: React.FC = () => {
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
-  const stagger = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
   return (
-    <Animation>
-      <section className="my-6 w-full max-w-7xl">
-        <div className="bg-background p-6 flex flex-col justify-center items-center gap-10 rounded-md text-white">
-          <motion.section
-            className="flex flex-col md:flex-row justify-start md:justify-center items-center gap-10 px-4 w-full"
-            initial="hidden"
-            animate="visible"
-            variants={stagger}
-          >
-            <motion.img
-              src="/img1.webp"
-              className="object-cover w-[100%] rounded-lg flex-1 lg:max-w-[50%] max-h-[600px] h-[50vh] shadow-lg"
-              variants={fadeInUp}
-            />
-            <motion.ul
-              className="list-disc flex-1 w-full list-inside mb-4 font-extralight space-y-2"
-              variants={fadeInUp}
-            >
-              <h3 className="text-4xl w-full mb-8 mx-auto text-start font-semibold">
-                Хардуерни Услуги
-              </h3>
+    <section className="my-6 w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <Animation>
+        <div className="bg-backgroundDark p-4 bg-opacity-35 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">
+          <img
+            src="/img1.webp"
+            className="object-cover w-full rounded-t-lg h-64 mb-6"
+            alt="Hardware Services"
+          />
+          <div className="flex flex-col flex-1">
+            <h3 className="text-4xl mb-4 font-semibold">Хардуерни Услуги</h3>
+            <ul className="list-disc list-inside space-y-2 font-extralight flex-1">
               <li>Ъпгрейди за горивни помпи за високо и ниско налягане</li>
               <li>Даунпайпи</li>
               <li>Заместващи OPF/DPF тръби</li>
@@ -48,45 +22,40 @@ const TuningServices: React.FC = () => {
               <li>Cold Air Intake системи</li>
               <li>Интеркулери</li>
               <li>Други</li>
-            </motion.ul>
-          </motion.section>
-          <motion.section
-            className="flex flex-col-reverse md:flex-row justify-start md:justify-center items-center gap-4 px-4 w-full"
-            initial="hidden"
-            animate="visible"
-            variants={stagger}
-          >
-            <motion.ul
-              className="list-disc flex-1 list-inside mb-4 font-extralight space-y-2"
-              variants={fadeInUp}
-            >
-              <h3 className="text-4xl w-full mb-8 mx-auto text-start font-semibold">
-                Софтуерни Решения
-              </h3>
+            </ul>
+          </div>
+        </div>
+    </Animation>
+        <Animation>
+
+        <div className="bg-backgroundDark p-4 bg-opacity-35 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">
+          <img
+            src="/img6.webp"
+            className="object-cover w-full rounded-t-lg h-64 mb-6"
+            alt="Software Solutions"
+          />
+          <div className="flex flex-col flex-1">
+            <h3 className="text-4xl mb-4 font-semibold">Софтуерни Решения</h3>
+            <ul className="list-disc list-inside space-y-2 font-extralight flex-1">
               <li>Спиране на DPF</li>
               <li>Спиране на EGR</li>
               <li>
-                Заключване на електромагнитни съединители на компресори (за CREC
-                3.0TFSI)
+                Заключване на електромагнитни съединители на компресори (за
+                CREC 3.0TFSI)
               </li>
               <li>
                 Заличаване на грешки от Fault Memory на моторния блок при
                 премахване на определени системи или т.нар DTC OFF
               </li>
               <li>И още много други</li>
-            </motion.ul>
-            <motion.img
-              src="/img6.webp"
-              className="object-cover w-[100%] rounded-lg flex-1 lg:max-w-[50%] max-h-[600px] h-[50vh] shadow-lg"
-              variants={fadeInUp}
-            />
-          </motion.section>
-          <p className="mt-4 text-accent text-lg">
-            За повече информация и персонализирани решения, се свържете с нас.
-          </p>
+            </ul>
+          </div>
         </div>
+        </Animation>
+        <p className="col-span-1 md:col-span-2 mt-4 text-accent text-lg text-center">
+          За повече информация и персонализирани решения, се свържете с нас.
+        </p>
       </section>
-    </Animation>
   );
 };
 
