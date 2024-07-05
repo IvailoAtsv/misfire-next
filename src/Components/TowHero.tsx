@@ -43,7 +43,7 @@ const TowHero = () =>{
   };
     return (
         <>
-            <section className="mb-6 md:mb-0 w-full h-[55vh] lg:h-[75vh] max-w-7xl flex flex-col lg:flex-row justify-center items-center">
+            <section className="mb-6 md:mb-0 w-full h-[55vh] lg:h-[70vh] max-w-7xl flex flex-col lg:flex-row justify-center items-center">
                 <div className="text-white py-6 w-[100%] flex flex-1 flex-col justify-center items-center ">
                     <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-[90%] my-2 text-center lg:text-left font-semibold text-5xl">Пътна Помощ</motion.h1>
                     <motion.p initial="hidden" animate="visible" variants={h1Variants} className="w-[90%] font-extralight opacity-75 text-center lg:text-left text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</motion.p>
@@ -55,8 +55,7 @@ const TowHero = () =>{
                     <div className="max-w-[400px] flex-1 mx-auto flex items-center justify-start gap-6">
                         <img src="/non-stop.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto " />
                         <div className="text-white">
-                            <p className="opacity-75">работим всеки ден</p>
-                            <p className="text-lg font-normal">24ч. в денонощието</p>
+                            <p className="text-lg font-semibold">Работим 24ч. в денонощието</p>
                         </div>
                     </div>
                 </span>
@@ -65,8 +64,7 @@ const TowHero = () =>{
                     <div className="max-w-[400px] flex-1 mx-auto flex items-center justify-start gap-6">
                         <img src="/phonecall.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto" />
                         <div className="text-white">
-                            <p className="opacity-75">при нужда от помощ</p>
-                            <p className="text-lg font-semibold">позвънете на 097648567539</p>
+                            <p className="text-lg font-semibold">Позвънете на 097648567539</p>
                         </div>
                     </div>
                 </a>
@@ -74,8 +72,7 @@ const TowHero = () =>{
                     <div className="max-w-[400px] flex-1 mx-auto flex items-center justify-start gap-6">
                         <img src="/quality.svg" className="h-[65%] max-h-[70px] max-w-[70px] w-auto" />
                         <div className="text-white">
-                            <p className="opacity-75">Работим по ДДС</p>
-                            <p className="text-lg font-semibold">Лицензирана фирма</p>
+                            <p className="text-lg font-semibold">Ние сме лицензирана фирма</p>
                         </div>
                     </div>
                 </span>
