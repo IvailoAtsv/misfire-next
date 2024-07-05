@@ -16,6 +16,7 @@ scroll-behavior: smooth;
 transition: all;
 transition-duration: 300ms;
 animation-duration: 300ms;
+scroll-margin: 60px;
 }
 
 *{

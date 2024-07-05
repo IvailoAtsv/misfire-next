@@ -1,12 +1,13 @@
 'use client'
 import React from "react";
 import Animation from "./Animation";
+import Link from "next/link";
 
 const TuningServices: React.FC = () => {
   return (
-    <section className="my-6 w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+    <section className="my-6 w-full max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-2">
         <Animation>
-        <div className="bg-backgroundDark p-4 bg-opacity-35 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">
+        <div className="bg-backgroundDark p-4 bg-opacity-45 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">
           <img
             src="/img1.webp"
             className="object-cover w-full rounded-t-lg h-64 mb-6"
@@ -28,7 +29,7 @@ const TuningServices: React.FC = () => {
     </Animation>
         <Animation>
 
-        <div className="bg-backgroundDark p-4 bg-opacity-35 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">
+        <div className="bg-backgroundDark p-4 bg-opacity-45 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">
           <img
             src="/img6.webp"
             className="object-cover w-full rounded-t-lg h-64 mb-6"
@@ -52,8 +53,8 @@ const TuningServices: React.FC = () => {
           </div>
         </div>
         </Animation>
-        <p className="col-span-1 md:col-span-2 mt-4 text-accent text-lg text-center">
-          За повече информация и персонализирани решения, се свържете с нас.
+        <p className="col-span-1 md:col-span-2 text-white my-4 text-lg text-center">
+          За повече информация и персонализирани решения <Link className="underline text-accent" href='/#contact-form'>направете запитване</Link>
         </p>
       </section>
   );

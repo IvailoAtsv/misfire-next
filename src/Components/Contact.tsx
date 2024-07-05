@@ -11,10 +11,11 @@ export const Contact = () => {
     return (
     <Animation maxW='3440px' moveY={120} opacity={0.6} start={0.7}>
         <div
-            id="contact"
+            
             className="relative max-w-[3440px] mx-auto w-full h-auto  bg-accent flex justify-center items-center"
         >
             <img
+            id='contact-form'
         src="wave.svg"
         className="object-cover h-[200px] absolute bottom-[99%] w-[100%]"
       />

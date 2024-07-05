@@ -5,7 +5,7 @@ const Tuning = () => {
 
 
   return ( 
-    <main id="home" className="mt-[60px] flex justify-center items-center flex-col relative w-full min-h-[70vh]">
+    <main id="home" className="mt-[70px] flex justify-center items-center flex-col relative w-full min-h-[70vh]">
       <TuningHero />
       <TuningServices/>
 </main>

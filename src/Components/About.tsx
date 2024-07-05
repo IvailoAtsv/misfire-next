@@ -1,6 +1,6 @@
 import Animation from './Animation';
 
-const imgStyles = "transition duration-300 hover:scale-105 z-20 rounded-lg object-cover max-w-[250px] h-[50%]"
+const imgStyles = "transition duration-300 w-[98%] hover:scale-105 z-20 rounded-lg object-cover max-w-[250px] h-[50%]"
 export const About = () => {
 
     return (
