@@ -1,6 +1,6 @@
 import Animation from './Animation';
 
-const imgStyles = "transition duration-300 hover:scale-105 z-20 rounded-lg object-cover h-[50%]"
+const imgStyles = "transition duration-300 hover:scale-105 z-20 rounded-lg object-cover max-w-[250px] h-[50%]"
 export const About = () => {
 
     return (
@@ -8,14 +8,14 @@ export const About = () => {
         <section className="w-full px-4 mb-36 bg-background text-white min-h-[80vh]">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
-                    <div className="w-full flex justify-center items-center lg:w-6/12">
+                    <div className="w-full flex justify-center items-center flex-1 lg:w-6/12">
                         <section className="w-full flex h-[80vh] max-h-[900px] justify-center lg:justify-start items-center gap-4 flex-1">
                             <div className="flex-col h-full gap-4 flex justify-center items-center">
-                                <img src="/img1.webp" className={imgStyles} />
-                                <img src="/img2.webp" className={imgStyles} />
+                                <img src="/about1.webp" className={imgStyles} />
+                                <img src="/about2.webp" className={imgStyles} />
                             </div>
                             <div className="relative flex items-center justify-center h-full group">
-                                <img src="/img3.webp" className={imgStyles} />
+                                <img src="/about3.webp" className={imgStyles} />
                                 <svg className="transition duration-300 absolute bottom-[20%] group-hover:scale-105 z-0 right-[-10%]"
                                     width="134"
                                     height="106"

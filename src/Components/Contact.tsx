@@ -12,7 +12,7 @@ export const Contact = () => {
     <Animation maxW='3440px' moveY={120} opacity={0.6} start={0.7}>
         <div
             id="contact"
-            className="relative max-w-[3440px] w-full h-auto  bg-accent flex justify-center items-center"
+            className="relative max-w-[3440px] mx-auto w-full h-auto  bg-accent flex justify-center items-center"
         >
             <img
         src="wave.svg"
@@ -23,8 +23,8 @@ export const Contact = () => {
         src="wave-8.svg"
         className=" object-cover rotate-180 absolute h-[150px] top-[98%] w-full"
       /> */}
-            <section className="w-[90%] gap-4 lg:max-h-[600px] bg-accent rounded-lg max-w-7xl h-[90vh] flex-col lg:flex-row items-center flex justify-between">
-                <form className="text-white max-w-3xl font-normal w-full flex-1 h-full flex pl-0 p-8 gap-4 flex-col justify-between items-start">
+            <section className="w-full gap-2 lg:max-h-[600px] bg-accent rounded-lg max-w-7xl h-[80vh] flex-col lg:flex-row items-center flex justify-center">
+                <form className="text-white max-w-3xl font-normal w-full flex-1 h-full flex p-6 gap-3 flex-col justify-between items-start">
                     <h2 className="text-3xl mb-auto font-bold">Свържете се с нас!</h2>
                     <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
                         <FormPair>

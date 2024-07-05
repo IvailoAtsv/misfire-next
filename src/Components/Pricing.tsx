@@ -33,7 +33,7 @@ const Pricing:React.FC = () =>{
                     </tr>
                 </tbody>
             </table>
-            <p className="mt-4 text-opacity-75 text-accent text-lg">Всички цени са с ДДС и могат да бъдат предоговаряни.</p>
+            <p className="mt-4 text-accent text-lg">Всички цени са с ДДС и могат да бъдат предоговаряни.</p>
         </div>
     </section>
     </Animation>

@@ -7,6 +7,7 @@ const Towing = () => {
     return (
         <main className="w-full relative mt-[80px] sm:mt-[100px] xl:mt-[60px] flex flex-col justify-normal items-center">
             <TowHero />
+                <h2 className="text-3xl text-white font-semibold w-full mx-auto text-center mt-6 mb-3">Услуги</h2>
             <section className="my-6 w-[90%] gap-y-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-7xl">
                 <ServiceCard description="Осигуряваме надежден транспорт в рамките на България, с бърза и професионална услуга." label="Транспорт в страната" src="/towed-car.svg"/>
                 <ServiceCard description="Специализирани сме в транспортирането на аварирали автомобили, с акцент върху безопасността и ефективността." label="Транспорт на аварирали автомобили" src="/car-crash.svg"/>

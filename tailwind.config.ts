@@ -18,7 +18,7 @@ const config: Config = {
                 background: '#1a2635',
             },
               fontSize: {
-        h1clamp: "clamp(3rem, 6.5vw, 10rem)",
+        h1clamp: "clamp(4rem, 6.5vw, 10rem)",
         h2clamp: "clamp(3rem, 3.4vw, 6.5rem)",
         labelClamp:"clamp(1.9rem, 2vw, 2.7rem)",
         iconClamp: "clamp(4em, 10vw, 13rem)",

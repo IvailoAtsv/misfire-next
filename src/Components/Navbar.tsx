@@ -17,11 +17,11 @@ export function Navbar({ }) {
             className={`bg-background   text-white font-light flex justify-center items-center fixed w-full z-50 top-0 start-0 shadow-xl`}
         >
             <div
-                className={`relative max-w-7xl z-50 flex justify-center items-center w-[90%] min-h-[70px] ${nav ? 'flex justify-center items-center flex-col' : ''
+                className={`relative max-w-7xl z-50 flex justify-center items-center w-[95%] min-h-[70px] ${nav ? 'flex justify-center items-center flex-col' : ''
                     }`}
             >
                 {/* {nav && <div className='w-screen h-screen z-0 bg-black opacity-40'></div>} */}
-                <Link className='bg-background ' onClick={()=>setNav(false)} href={"/"}>
+                <Link className={navBtnStyle} onClick={()=>setNav(false)} href={"/"}>
                     <Image alt='logo' src="/misfire-1 2.png" width={500} height={500} className={`absolute h-full max-h-[60px] py-1 w-auto top-[-0px] left-0 `} />
                 </Link>
                 {/* <img
@@ -39,42 +39,24 @@ export function Navbar({ }) {
                     className={`transition-all z-50 duration-300 ease-out overflow-hidden sm:overflow-auto w-full flex flex-col ${nav ? 'h-auto min-h-[30vh] mt-20' : 'md:h-auto h-0'} md:flex md:flex-row mx-auto  md:justify-end md:gap-4 justify-start items-center rounded-lg`}
                 >
                     <li className={liStyles}>
-                        <Link className='bg-background ' onClick={()=>setNav(false)} href="/">
-                            <button
-
-                                className={navBtnStyle}
-                            >
+                        <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/">
                                 Начало
-                            </button>
                         </Link>
                     </li>
                      <li className={liStyles}>
-                        <Link className='bg-background ' onClick={()=>setNav(false)} href="/tuning">
-                            <button
-
-                                className={navBtnStyle}
-                            >
+                        <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/tuning">
                                 Тунинг
-                            </button>
                         </Link>
                     </li>
                      <li className={liStyles}>
-                        <Link className='bg-background ' onClick={()=>setNav(false)} href="/towing">
-                            <button
-
-                                className={navBtnStyle}
-                            >
+                        <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/towing">
                                 Пътна помощ
-                            </button>
                         </Link>
                     </li>
                     <li className={liStyles}>
-                            <button
-
-                                className={navBtnStyle}
-                            >
-                                Гуми & Джанти
-                            </button>
+                        <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/towing">
+                                Сервиз Гуми 
+                        </Link>
                     </li>
                 
                 </ul>
