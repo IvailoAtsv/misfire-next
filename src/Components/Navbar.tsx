@@ -7,7 +7,7 @@ import { IoMdClose } from 'react-icons/io'
 import { IoMenu } from 'react-icons/io5'
 
 const navBtnStyle = `hover:text-accent z-40 whitespace-nowrap bg-background  text-lg p-2 md:p-1 transition duration-300 p-1 w-[100%] text-gray-800`
-const liStyles = `text-sm bg-background  z-40 whitespace-nowrap block flex justify-center items-center my-1 md:m:0 'w-[90%] md:max-w-[150px] rounded`
+const liStyles = `text-sm bg-background  z-40 whitespace-nowrap block flex justify-center items-center my-1 md:m:0 md:max-w-[180px] rounded`
 
 export function Navbar({ }) {
     const [nav, setNav] = useState(false)
@@ -21,7 +21,7 @@ export function Navbar({ }) {
                     }`}
             >
                 {/* {nav && <div className='w-screen h-screen z-0 bg-black opacity-40'></div>} */}
-                <Link className={navBtnStyle} onClick={()=>setNav(false)} href={"/"}>
+                <Link onClick={()=>setNav(false)} href={"/"}>
                     <Image alt='logo' src="/misfire-1 2.png" width={500} height={500} className={`absolute h-full max-h-[60px] py-1 w-auto top-[-0px] left-0 `} />
                 </Link>
                 {/* <img
