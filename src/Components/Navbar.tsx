@@ -53,6 +53,11 @@ export function Navbar({ }) {
                                 Пътна помощ
                         </Link>
                     </li>
+                     <li className={liStyles}>
+                        <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/tires">
+                                Сервиз гуми
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>
