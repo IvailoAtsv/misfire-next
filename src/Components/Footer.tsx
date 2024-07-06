@@ -17,6 +17,7 @@ const Footer = () => {
           <Link href="/" className="hover:text-accent transition duration-300">Начало</Link>
           <Link href="/tuning" className="whitespace-nowrap hover:text-accent transition duration-300">Тунинг</Link>
           <Link href="/towing" className="whitespace-nowrap hover:text-accent transition duration-300">Пътна помощ</Link>
+          <Link href="/tires" className="whitespace-nowrap hover:text-accent transition duration-300">Сервиз гуми</Link>
             </div>
         </div>
         <div className="flex flex-1 w-full justify-center md:justify-end items-center gap-4">
