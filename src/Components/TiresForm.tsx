@@ -24,7 +24,7 @@ const TireRequestForm: React.FC = () => {
 
   return (
     <Animation maxW='3440px'>
-    <section className="w-[95%] bg-opacity-40 my-6 max-w-container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 bg-backgroundDark p-6 rounded-lg text-white">
+    <section id='tire-form' className="w-[95%] bg-opacity-40 my-6 max-w-container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 border-backgroundDark  border-opacity-40 p-6 rounded-lg text-white">
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-4">
         <h3 className="text-4xl mb-4 font-semibold">Запитване за гуми</h3>
         <div>

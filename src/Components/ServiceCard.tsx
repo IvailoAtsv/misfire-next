@@ -5,7 +5,8 @@ type Service = {
     src: string;
     link?: string;
     clickable?: boolean;
-    description?:string
+    description?:string;
+    blur?:boolean;
 };
 
 const ServiceCard: React.FC<Service> = (service) => {
@@ -14,7 +15,7 @@ const ServiceCard: React.FC<Service> = (service) => {
         <Animation>
         <a
             href={service?.link}
-            className={`px-2 py-4 transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-15 flex-1 w-[98%] h-[300px] hover:translate-y-[-3px] hover:border-opacity-100 ${
+            className={`px-2 py-4 ${service?.blur ? "backdrop-blur-lg": ''} transition duration-300 group flex flex-col justify-between gap-2 items-center text-white rounded-lg border border-white border-opacity-15 flex-1 w-[98%] h-[300px] hover:translate-y-[-3px] hover:border-opacity-100 ${
                 service.clickable ? 'cursor-pointer' : ''
             }`}
         >

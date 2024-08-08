@@ -1,3 +1,4 @@
+import TuningAbout from "@/Components/TuningAbout";
 import TuningHero from "@/Components/TuningHero";
 import TuningServices from "@/Components/TuningServices";
 
@@ -7,6 +8,7 @@ const Tuning = () => {
   return ( 
     <main id="home" className="mt-[70px] flex justify-center items-center flex-col relative w-full min-h-[70vh]">
       <TuningHero />
+      <TuningAbout />
       <TuningServices/>
 </main>
   );

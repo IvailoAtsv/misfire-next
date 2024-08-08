@@ -43,10 +43,14 @@ const TowHero = () =>{
   };
     return (
         <>
-            <section className="mb-6 md:mb-0 w-full h-[60vh] container flex flex-col lg:flex-row justify-center items-center">
-                <div className="text-white pt-2 w-[100%] flex flex-1 flex-col justify-center items-center ">
-                    <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-[90%] my-2 text-center lg:text-left font-light text-5xl">Пътна Помощ</motion.h1>
-                    <motion.p initial="hidden" animate="visible" variants={h1Variants} className="w-[90%] font-extralight opacity-75 text-center lg:text-left text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</motion.p>
+            <section className="mb-6 md:mb-0 w-full mt-[30px] h-[60vh] container flex flex-col lg:flex-row justify-center gap-4 md:gap-1 items-center">
+                <div className="text-white p-4 w-[100%] gap-2 flex flex-1 flex-col justify-center items-center">
+                    <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-full my-2 text-center lg:text-left font-light text-5xl">Пътна Помощ</motion.h1>
+                    <motion.p initial="hidden" animate="visible" variants={h2Variants} className="w-full font-extralight opacity-75 text-center lg:text-left text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</motion.p>
+                    <motion.div initial="hidden" animate="visible" variants={buttonVariants} className="md:self-start pt-4">
+                    <motion.a  href="tel:097648567539" className="whitespace-nowrap self-center hover:bg-accentDark hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-accent border border-accent hover:border-accentDark px-6 py-3 text-white font-semibold text-md rounded-sm">Позвънете сега</motion.a>
+                    </motion.div>
+
                 </div>
                 <motion.img initial="hidden" animate="visible" variants={h1Variants} src="towBg.webp" className="flex-1 w-[90%] h-[95%] lg:w-1/2 object-cover rounded-md" />
             </section>
