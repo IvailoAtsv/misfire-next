@@ -117,8 +117,8 @@ export const Contact = () => {
               </div>
               <div className="flex flex-col text-left justify-center gap-2 items-start">
                 <p className="text-lg font-bold whitespace-nowrap">Работно време:</p>
-                <p className='font-extralight whitespace-nowrap opacity-90'>Понеделник-Петък: 10:00-20:00</p>
-                <p className='font-extralight whitespace-nowrap opacity-90'>Събота: 10:00-14:00</p>
+                <p className='font-extralight whitespace-nowrap opacity-90'>Понеделник-Петък: 9:00-18:00</p>
+                <p className='font-extralight whitespace-nowrap opacity-90'>Събота: 9:00-14:00</p>
                 <p className='font-extralight whitespace-nowrap opacity-90'>Неделя: Затворено</p>
               </div>
             </section>
