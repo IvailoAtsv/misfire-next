@@ -11,7 +11,7 @@ type AnimationProps = {
     moveY?: number;
 }
 
-const Animation: React.FC<AnimationProps> = ({ moveY = 100, maxW = '7xl', height = 'auto', children, start = 1, opacity = 0 }) => {
+const Animation: React.FC<AnimationProps> = ({ moveY = 100, maxW = '7xl', height = 'auto', children, start = 1, opacity = 0.4 }) => {
     const ref = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: ref,

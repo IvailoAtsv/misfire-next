@@ -115,7 +115,7 @@ const TuningAbout = () => {
 		<section className="mx-auto min-h-[60vh] pt-14 md:pt-24 pb-14 lg:pb-0 bg-background text-zinc-900 dark:text-white relative  z-[1]">
 			<ShapeThree />
 			<ShapeFour />
-			<div className="container px-4">
+			<div className="container gap-4 px-4">
 				<div className="grid grid-cols-12 justify-between">
 					<div className="col-span-12 md:col-span-5">
 						<div className="relative">
@@ -133,7 +133,7 @@ const TuningAbout = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col md:flex-row justify-center items-center">
+				<div className="flex flex-col gap-2 md:flex-row justify-center items-center">
 					<ServiceCard blur={true} label="Производителност" src="/fast.svg" />
 					<ServiceCard blur label="Горивна ефективност" src="/fuel.svg" />
 					<ServiceCard blur={true} label="По-добро шофьорското изживяване" src="/driving.svg" />

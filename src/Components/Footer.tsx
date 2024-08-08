@@ -24,11 +24,8 @@ const Footer = () => {
           <Link href="tel:097648567539" target="_blank" rel="noopener noreferrer">
             <FaPhone size={22} className={socialIconStyle} />
           </Link>
-          <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.facebook.com/p/Автосервиз-Мисфайър-61552471806879/?locale=bg_BG" target="_blank" rel="noopener noreferrer">
             <FaFacebook size={24} className={socialIconStyle} />
-          </Link>
-          <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter size={24} className={socialIconStyle} />
           </Link>
           <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram size={24} className={socialIconStyle} />
@@ -36,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-4 border-t border-opacity-20 border-white flex items-center justify-center py-2 text-center text-sm opacity-85">
-        <p className='py-4'>Powered by оur clients' wives</p>
+        <p className='py-4'>Powered by <a target='_blank' href='https://ivailo.dev' className='underline cursor-pointer transition duration-300 hover:text-accent'>a bearded guy</a></p>
       </div>
     </footer>
   );

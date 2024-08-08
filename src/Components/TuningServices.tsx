@@ -113,7 +113,7 @@ const TuningServices: React.FC = () => {
     <h2 className="w-full mx-auto text-center mt-12 text-white font-bold text-h2clamp">Misfire предлага:</h2>
     <section className="my-6 w-full container mx-auto px-4 flex flex-col gap-6">
       {/* <Animation>
-        <div className=" z-20 relative p-4 bg-opacity-45 min-h-[600px] rounded-lg text-white flex flex-col">          
+        <div className=" z-20 relative p-4 bg-opacity-45 min-h-[500px] rounded-lg text-white flex flex-col">          
           <img
             src="/img1.webp"
             className="object-cover w-full rounded-t-lg h-64 mb-6"
@@ -136,7 +136,7 @@ const TuningServices: React.FC = () => {
     */}
         {/* <Animation>
 
-        <div className="bg-backgroundDark p-4 bg-opacity-45 min-h-[600px] rounded-lg text-white shadow-lg flex flex-col">
+        <div className="bg-backgroundDark p-4 bg-opacity-45 min-h-[500px] rounded-lg text-white shadow-lg flex flex-col">
           <img
             src="/img6.webp"
             className="object-cover w-full rounded-t-lg h-64 mb-6"
@@ -176,7 +176,7 @@ const TuningServices: React.FC = () => {
             <div className="lg:px-4 my-6 lg:my-0">
               <img
               src="/img2.webp"
-                className="object-cover min-h-[300px] w-full rounded-lg md:h-full max-h-[600px] bg-center bg-cover"
+                className="object-cover min-h-[300px] w-full rounded-lg md:h-full max-h-[500px] bg-center bg-cover"
              />
             </div>
             <div className="pr-7">
@@ -209,7 +209,7 @@ const TuningServices: React.FC = () => {
             <div className="lg:px-4 my-6 lg:my-0">
               <img
               src="/img6.webp"
-                className="object-cover min-h-[300px] w-full rounded-lg md:h-full max-h-[600px] bg-center bg-cover"
+                className="object-cover min-h-[300px] w-full rounded-lg md:h-full max-h-[500px] bg-center bg-cover"
              />
             </div>
             <div className="pr-7">

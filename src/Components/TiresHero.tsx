@@ -47,7 +47,7 @@ const TireHero = () =>{
                 <div className="text-white w-[100%] flex flex-1 gap-2 flex-col justify-center items-center p-4">
                     <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-full my-2 text-center lg:text-left font-light text-h2clamp">Смяна на Гуми</motion.h1>
                     <motion.p initial="hidden" animate="visible" variants={h2Variants} className="w-full font-extralight opacity-75 text-center lg:text-left text-lg">Бърза и професионална смяна на гуми. Разберете цената и услугите, които предлагаме.</motion.p>
-                    <motion.div initial="hidden" animate="visible" variants={buttonVariants} className="md:self-start pt-4">
+                    <motion.div initial="hidden" animate="visible" variants={buttonVariants} className="lg:self-start self-center pt-4">
                     <motion.a  href="#tire-form" className="whitespace-nowrap self-center hover:bg-accentDark hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-accent border border-accent hover:border-accentDark px-6 py-3 text-white font-semibold text-md rounded-sm">Направете запитване</motion.a>
                     </motion.div>
                 </div>
