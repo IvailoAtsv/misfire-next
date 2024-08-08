@@ -1,10 +1,12 @@
 'use client'
-import React from 'react';
+import React, { useEffect } from 'react';
 import Image from 'next/image';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import Animation from './Animation';
+import emailjs from "@emailjs/browser";
+import toast from 'react-hot-toast';
 
 const schema = yup.object().shape({
   width: yup.string().required('Ширината е задължителна'),
@@ -14,12 +16,39 @@ const schema = yup.object().shape({
 });
 
 const TireRequestForm: React.FC = () => {
-  const { register,handleSubmit, control, formState: { errors } } = useForm({
+  const { register,handleSubmit, reset,control, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   });
 
-  const onSubmit = (data: any) => {
-    console.log(data);
+  useEffect(() => {
+  if(process.env.NEXT_PUBLIC_PUBLIC_KEY){
+    emailjs.init(process.env.NEXT_PUBLIC_PUBLIC_KEY);
+  }else{
+    toast.error('kur tate banica')
+  }
+  }, []);
+
+  const onSubmit = async (data: any) => {
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_TIRES_ID;
+    
+    const result = {
+      name: data.width,
+      phone:data.phoneNumber,
+      radius:data.radius,
+      height:data.height,
+    }
+
+    try {
+      if(serviceId && templateId){
+      await emailjs.send(serviceId, templateId, result);
+      toast.success("Успешно изпратено запитване! Нашият екип ще се свърже с вас!");
+      reset()
+    }
+    } catch (error) {
+      toast.error(`${error}`);
+    } 
+    
   };
 
   return (

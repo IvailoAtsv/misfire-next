@@ -1,5 +1,5 @@
 'use client'
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import { FaPhone, FaCity, FaLink } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import Animation from './Animation';
@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import emailjs from "@emailjs/browser";
+import toast from 'react-hot-toast';
 
 export const labelStyles = 'text-xl font-extralight text-white';
 export const inputStyles = 'bg-accentDark text-lg outline-white p-3 rounded-md w-[100%]';
@@ -17,13 +19,46 @@ const schema = yup.object().shape({
   message: yup.string().required('Запитването е задължително'),
 });
 
+interface UserDataI {
+  name:string;
+  phoneNumber:string;
+  message:string;
+}
+
 export const Contact = () => {
-  const { register, handleSubmit, control, formState: { errors } } = useForm({
+
+  const { register, handleSubmit, control,reset, formState: { errors } } = useForm({
     resolver: yupResolver(schema)
   });
+useEffect(() => {
+  if(process.env.NEXT_PUBLIC_PUBLIC_KEY){
+    emailjs.init(process.env.NEXT_PUBLIC_PUBLIC_KEY);
+  }
+  }, []);
 
-  const onSubmit = (data: any) => {
-    console.log(data);
+
+  const onSubmit = async(data:UserDataI) => {
+    // e.preventDefault()
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+
+    const result = {
+      name: data.name,
+      phone:data.phoneNumber,
+      message:data.message
+    }
+
+    try {
+
+      if(serviceId && templateId){
+      await emailjs.send(serviceId, templateId, result);
+      toast.success("Успешно изпратено запитване! Нашият екип ще се свърже с вас!");
+    reset()
+
+      }
+    } catch (error) {
+      toast.error(`${error}`);
+    } 
   };
 
   return (
