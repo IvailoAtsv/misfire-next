@@ -48,7 +48,7 @@ const TowHero = () =>{
                     <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-full my-2 text-center lg:text-left font-light text-5xl">Пътна Помощ</motion.h1>
                     <motion.p initial="hidden" animate="visible" variants={h2Variants} className="w-full font-extralight opacity-75 text-center lg:text-left text-lg">Надеждна пътна помощ 24/7. Бърза реакция, професионална помощ и достъпни цени.</motion.p>
                     <motion.div initial="hidden" animate="visible" variants={buttonVariants} className="lg:self-start self-center pt-4">
-                    <motion.a  href="tel:097648567539" className="whitespace-nowrap self-center hover:bg-accentDark hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-accent border border-accent hover:border-accentDark px-6 py-3 text-white font-semibold text-md rounded-sm">Позвънете сега</motion.a>
+                    <motion.a  href="tel:0877220311" className="whitespace-nowrap self-center hover:bg-accentDark hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-accent border border-accent hover:border-accentDark px-6 py-3 text-white font-semibold text-md rounded-sm">Позвънете сега</motion.a>
                     </motion.div>
 
                 </div>
@@ -64,10 +64,10 @@ const TowHero = () =>{
                     </div>
                 </span>
                 <a target="_blank"
-                    href="tel:097648567539" className="w-full border-t border-b border-dashed border-opacity-15 mx-auto flex-1 h-[150px] p-1 gap-4 flex justify-center items-center overflow-hidden border border-accent bg-accent">
+                    href="tel:0877220311" className="w-full border-t border-b border-dashed border-opacity-15 mx-auto flex-1 h-[150px] p-1 gap-4 flex justify-center items-center overflow-hidden border border-accent bg-accent">
                     <div className="max-w-[400px] flex-1 mx-auto flex items-center justify-center gap-2">
                         <img src="/phonecall.svg" className="h-[65%] max-h-[50px] p-1 max-w-[50px] w-auto" />
-                        <p className="text-white text-lg font-light">Позвънете на 097648567539</p>
+                        <p className="text-white text-lg font-light">Позвънете на 0877220311</p>
                     </div>
                 </a>
                 <span className="border-opacity-25 border-white lg:border-t border-b  flex-1 w-full h-[150px] text-white  py-4 flex justify-center items-center gap-4">

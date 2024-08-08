@@ -4,9 +4,9 @@ import Animation from "./Animation";
 const Pricing: React.FC = () => {
     return (
         <Animation>
-            <section className="my-6 mt-12 w-full max-w-container flex items-center justify-center flex-col">
+            <section className="my-6 mx-auto mt-12 w-full max-w-container flex items-center justify-center flex-col">
                 <h2 className="text-white w-full text-center text-3xl font-semibold mb-4">Ценoразпис</h2>
-                <div className="bg-background w-[90%] p-6 rounded-md text-white">
+                <div className="bg-background w-full p-2 rounded-md text-white">
                     <table className="w-full font-extralight text-left border-collapse">
                         <thead>
                             <tr>

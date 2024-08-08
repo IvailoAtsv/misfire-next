@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="flex flex-1 w-full justify-center md:justify-end items-center gap-4">
-          <Link href="tel:097648567539" target="_blank" rel="noopener noreferrer">
+          <Link href="tel:0877220311" target="_blank" rel="noopener noreferrer">
             <FaPhone size={22} className={socialIconStyle} />
           </Link>
           <Link href="https://www.facebook.com/p/Автосервиз-Мисфайър-61552471806879/?locale=bg_BG" target="_blank" rel="noopener noreferrer">

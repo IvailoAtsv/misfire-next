@@ -109,10 +109,10 @@ export const Contact = () => {
                 </a>
                 <a
                   target="_blank"
-                  href="tel:097648567539"
+                  href="tel:0877220311"
                   className="font-extralight whitespace-nowrap cursor-pointer flex items-center gap-2"
                 >
-                  <FaPhone /> 097648567539 <FaLink />
+                  <FaPhone /> 0877220311 <FaLink />
                 </a>
               </div>
               <div className="flex flex-col text-left justify-center gap-2 items-start">
