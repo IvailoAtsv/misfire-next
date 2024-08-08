@@ -26,6 +26,7 @@ const Animation: React.FC<AnimationProps> = ({ moveY = 100, maxW = '7xl', height
             style={{
                 y: yProgress,
                 opacity: opacityProgress,
+                position:'relative',
             }}
             className={`h-${height} w-full mx-auto max-w-${maxW}`}
             ref={ref}
