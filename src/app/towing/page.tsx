@@ -1,6 +1,13 @@
 import Pricing from "@/Components/Pricing";
 import ServiceCard from "@/Components/ServiceCard";
 import TowHero from "@/Components/TowHero";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+    title:'Пътна помощ',
+    description:"Денонощна пътна помощ на телефон 0877220311",
+    keywords:["Пътна помощ","Пътна помощ Пловдив","денонощна пътна помощ","денонощна пътна помощ пловдив"]
+}
 
 const Towing = () => {
 

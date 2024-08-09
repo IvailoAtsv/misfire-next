@@ -1,10 +1,23 @@
 import TuningAbout from "@/Components/TuningAbout";
 import TuningHero from "@/Components/TuningHero";
 import TuningServices from "@/Components/TuningServices";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+  title:'Тунинг',
+  description:'Тунинг в автосервиз Misfire! спиране на EGR, DPF, performance tuning и още много!',
+  keywords:["Ъпгрейди за горивни помпи за високо и ниско налягане","Даунпайпи","Заместващи OPF/DPF тръби","Спортни изпускателни системи","Cold Air Intake системи","Интеркулери",
+    "Спиране на DPF",
+    "Спиране на EGR",
+    "Заключване на електромагнитни съединители на компресори (за CREC 3.0TFSI)",
+    "Заличаване на грешки от Fault Memory",
+    "тунинг пловдив",
+    "Tuning",
+    "tuning plovid",
+  ],
+}
 
 const Tuning = () => {
-
-
   return ( 
     <main id="home" className="mt-[70px] flex justify-center items-center flex-col relative w-full min-h-[70vh]">
       <TuningHero />
