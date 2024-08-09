@@ -4,10 +4,10 @@ const imgStyles = "transition duration-300 w-[98%] hover:scale-105 z-20 rounded-
 export const About = () => {
 
     return (
-        <Animation opacity={0.3}>
-        <section className="w-full px-4 mt-10 mb-36 bg-background text-white min-h-[80vh]">
+        <Animation opacity={0.6}>
+        <section className="w-full px-4 mt-10 mb-[200px] bg-background text-white min-h-[50vh] gap-2">
             <div className="container mx-auto">
-                <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
+                <div className="gap-4 flex flex-col-reverse lg:flex-row items-center justify-center">
                     <div className="w-full flex justify-center items-center flex-1 lg:w-6/12">
                         <section className="w-full flex h-[80vh] max-h-[900px] justify-center lg:justify-start items-center gap-4 flex-1">
                             <div className="flex-col h-full gap-4 flex justify-center items-center">

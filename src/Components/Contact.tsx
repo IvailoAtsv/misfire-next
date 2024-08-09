@@ -73,7 +73,7 @@ export const Contact = () => {
           src="wave.svg"
           className="object-cover h-[200px] absolute bottom-[99%] w-[100%]"
         />
-        <section className="w-full gap-3 lg:max-h-[700px] bg-accent rounded-lg container min-h-[70vh] flex-col lg:flex-row items-center flex justify-between">
+        <section className="w-full gap-3 lg:max-h-[700px] bg-accent rounded-lg container flex-col lg:flex-row items-center flex justify-between">
           <form onSubmit={handleSubmit(onSubmit)} className="text-white max-w-2xl font-normal w-full flex-1 h-full flex p-2 gap-3 flex-col justify-between items-start">
             <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
               <h2 className="text-3xl mb-auto font-bold py-4">Свържете се с нас!</h2>
