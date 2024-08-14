@@ -27,7 +27,7 @@ export const Services = () => {
     return (
         <div
             id="services"
-            className="w-full h-auto mb-10 mt-5 py-10 flex flex-col justify-center items-center bg-background"
+            className="w-full max-w-screen-xl h-auto mb-10 mt-5 py-10 flex flex-col justify-center items-center bg-background"
         >
             {/* <motion.section initial="hidden" animate="visible" variants={buttonVariants} className="w-[90%] container flex-col items-center flex h-full justify-center"> */}
                 <Animation><h2 className="self-center opacity-80 pb-8 text-5xl w-full text-center text-white">Услуги</h2></Animation>

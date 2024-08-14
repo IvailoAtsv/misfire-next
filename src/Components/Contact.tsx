@@ -74,7 +74,8 @@ export const Contact = () => {
           className="object-cover h-[200px] absolute bottom-[99%] w-[100%]"
         />
         <section className="w-full gap-3 lg:max-h-[700px] bg-accent rounded-lg container flex-col lg:flex-row items-center flex justify-between">
-          <form onSubmit={handleSubmit(onSubmit)} className="text-white max-w-2xl font-normal w-full flex-1 h-full flex p-2 gap-3 flex-col justify-between items-start">
+          <div className='max-w-screen-xl w-full mx-auto flex flex-col lg:flex-row justify-between items-center '>
+          <form onSubmit={handleSubmit(onSubmit)} className="text-white max-w-xl font-normal w-full flex-1 h-full flex p-2 gap-2 flex-col justify-between items-start">
             <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
               <h2 className="text-3xl mb-auto font-bold py-4">Свържете се с нас!</h2>
 
@@ -153,13 +154,14 @@ export const Contact = () => {
               </div>
             </section>
           </form>
-          <Link target='_blank' href='https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu'>
+          <Link target='_blank' className='p-2' href='https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu'>
             <img
               src='/location.png'
-              className="object-cover hidden md:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[80%]"
+              className="object-cover flex-1 hidden md:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[300px] md:max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[60%] md:h-[80%]"
               alt="location"
             />
           </Link>
+          </div>
         </section>
       </div>
     </Animation>

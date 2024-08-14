@@ -111,7 +111,7 @@ const TuningServices: React.FC = () => {
   return (
     <>
     <h2 className="w-full mx-auto text-center mt-12 text-white font-bold text-5xl">Misfire предлага:</h2>
-    <section className="my-6 w-full container mx-auto px-4 flex flex-col gap-6">
+    <section className="max-w-screen-xl my-6 w-full container mx-auto px-4 flex flex-col gap-6">
       {/* <Animation>
         <div className=" z-20 relative p-4 bg-opacity-45 min-h-[500px] rounded-lg text-white flex flex-col">          
           <img
