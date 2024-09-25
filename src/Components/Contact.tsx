@@ -65,9 +65,9 @@ export const Contact = () => {
   };
 
   return (
-    <Animation maxW='3440px' moveY={120} opacity={0.6} start={0.7}>
+    <Animation maxW='3440px' moveY={150} opacity={1} start={0.7}>
         {sent ? '' : <h2 className='z-50 text-white text-h2clamp absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] animate-pulse'>Изпращане...</h2>}
-      <div className={`${sent? 'opacity-100' : 'opacity-20' } relative py-6 max-w-[3440px] mx-auto w-full h-auto bg-accent flex justify-center items-center`}>
+      <div className={`${sent? 'opacity-100' : 'opacity-20' } relative p-6 max-w-[3440px] mx-auto w-full h-auto bg-accent flex justify-center items-center`}>
         <img
           id='contact-form'
           src="wave.svg"
@@ -134,7 +134,7 @@ export const Contact = () => {
                 <a
                   className="font-extralight whitespace-nowrap flex cursor-pointer no-underline items-center gap-2"
                   target="_blank"
-                  href="https://www.google.com/maps/place/Автосервиз+Мисфайър+Misfire+Service,+NPZ+Iskar,+ul.+%225001-va%22+п.к.+25,+1528+Sofia/data=!4m2!3m1!1s0x40aa87fb134b59fd:0x774ef5f2cc3c7204?utm_source=mstt_1&entry=gps&g_ep=CAESCjExLjExOS4xMDEYACDXggMqJCw0NzA3NTkxNSw0NzA4NzExOCw0NzA4NDM4Nyw5NDIxMzE5NEICQkc%3D"
+                  href="https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu"
                 >
                   <FaLocationDot />Ягодовско шосе 17 <FaLink />
                 </a>
@@ -157,7 +157,7 @@ export const Contact = () => {
           <Link target='_blank' className='p-2' href='https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu'>
             <img
               src='/location.png'
-              className="object-cover flex-1 hidden md:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[300px] md:max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[60%] md:h-[80%]"
+              className="aspect-square object-cover flex-1 hidden md:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[300px] md:max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[50%] md:h-[80%]"
               alt="location"
             />
           </Link>
