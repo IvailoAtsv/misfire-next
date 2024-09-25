@@ -43,7 +43,7 @@ const TireHero = () =>{
   };
     return (
         <>
-            <section className="mb-6 mt-[60px] md:mb-0 w-full h-[60vh] container flex flex-col lg:flex-row justify-center items-center gap-4">
+            <section className="mb-6  md:mb-0 w-full min-h-[60vh] py-20 container flex flex-col lg:flex-row justify-center items-center gap-4">
                 <div className="text-white w-[100%] flex flex-1 gap-2 flex-col justify-center items-center p-4">
                     <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-full my-2 text-center lg:text-left font-light text-h2clamp">Смяна на Гуми</motion.h1>
                     <motion.p initial="hidden" animate="visible" variants={h2Variants} className="w-full font-extralight opacity-75 text-center lg:text-left text-lg">Бърза и професионална смяна на гуми. Разберете цената и услугите, които предлагаме.</motion.p>

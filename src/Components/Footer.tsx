@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 flex-1 w-full md:mb-0 text-center md:text-left">
           <h2 className="text-2xl font-semibold">Misfire</h2>
-          <p className="text-sm opacity-65">© 2024 Автосервиз Misfire. All rights reserved.</p>
+          <p className="text-sm md:pr-8 opacity-65">© 2024 Автосервиз Misfire. All rights reserved.</p>
         </div>
         <div className="flex flex-col justify-center items-center flex-1 w-full mb-4 md:mb-0">
             <h2 className='font-bold mb-1 text-lg'>Полезни линкове</h2>
