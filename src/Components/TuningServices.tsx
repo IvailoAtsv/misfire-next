@@ -6,7 +6,7 @@ import Link from "next/link";
 const ShapeOne = () => (
   <>
     <svg
-      className="absolute blur-2xl bottom-[10%] left-[5%] -z-[1] text-gray-50 dark:text-[#1E2735]"
+      className="absolute blur-[30px] opacity-55 bottom-[10%] left-[5%] -z-[1] text-gray-50 dark:text-[#1E2735]"
       width="499"
       height="499"
       viewBox="0 0 600 600"
@@ -25,7 +25,7 @@ const ShapeOne = () => (
 );
 const ShapeThree = () => (
   <svg
-    className="absolute blur-2xl bottom-[15%] left-[2%] -z-[1] text-gray-50 dark:text-[#1E2735]"
+    className="absolute blur-[30px] opacity-55 bottom-[15%] left-[2%] -z-[1] text-gray-50 dark:text-[#1E2735]"
     width="223"
     height="262"
     viewBox="0 0 223 262"
@@ -41,7 +41,7 @@ const ShapeThree = () => (
 );
 const ShapeFour = () => (
   <svg
-    className="absolute blur-2xl bottom-[22%] right-[15%] -z-[1] text-gray-50 dark:text-[#1E2735]"
+    className="absolute blur-[30px] opacity-55 bottom-[22%] right-[15%] -z-[1] text-gray-50 dark:text-[#1E2735]"
     width="155"
     height="166"
     viewBox="0 0 155 166"
@@ -58,7 +58,7 @@ const ShapeFour = () => (
 const ShapeOne2 = () => (
   <>
     <svg
-      className="absolute blur-2xl bottom-[10%] right-[5%] -z-[1] text-gray-50 dark:text-[#1E2735]"
+      className="absolute blur-[30px] opacity-55 bottom-[10%] right-[5%] -z-[1] text-gray-50 dark:text-[#1E2735]"
       width="499"
       height="499"
       viewBox="0 0 600 600"
@@ -77,7 +77,7 @@ const ShapeOne2 = () => (
 );
 const ShapeThree2 = () => (
   <svg
-    className="absolute blur-2xl bottom-[15%] right-[2%] -z-[1] text-gray-50 dark:text-[#1E2735]"
+    className="absolute blur-[30px] opacity-55 bottom-[15%] right-[2%] -z-[1] text-gray-50 dark:text-[#1E2735]"
     width="223"
     height="262"
     viewBox="0 0 223 262"
@@ -93,7 +93,7 @@ const ShapeThree2 = () => (
 );
 const ShapeFour2 = () => (
   <svg
-    className="absolute blur-2xl bottom-[22%] left-[15%] -z-[1] text-gray-50 dark:text-[#1E2735]"
+    className="absolute blur-[30px] opacity-55 bottom-[22%] left-[15%] -z-[1] text-gray-50 dark:text-[#1E2735]"
     width="155"
     height="166"
     viewBox="0 0 155 166"
