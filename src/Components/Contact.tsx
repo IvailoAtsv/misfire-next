@@ -117,13 +117,13 @@ export const Contact = () => {
               </button>
             </div>
 
-            <Link target='_blank' className='w-full mt-6' href='https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu'>
+            {/* <Link target='_blank' className='w-full mt-6' href='https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu'>
               <img
                 src='/location.png'
-                className="object-cover mx-auto md:hidden mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[80%]"
+                className="object-cover aspect-square mx-auto hidden xl:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer  h-[100%]"
                 alt="location"
               />
-            </Link>
+            </Link> */}
 
             <section className="w-[100%] text-md mt-auto flex-col gap-2 lg:flex-row py-2 border-t-2 border-accentDark font-extralight whitespace-nowrap flex justify-between items-start lg:items-center">
               <div className="flex flex-col gap-2 text-left justify-center items-start">
@@ -154,10 +154,10 @@ export const Contact = () => {
               </div>
             </section>
           </form>
-          <Link target='_blank' className='p-2' href='https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu'>
+          <Link target='_blank' className='pl-6' href='https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu'>
             <img
               src='/location.png'
-              className="aspect-square object-cover flex-1 hidden md:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[300px] md:max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[50%] md:h-[80%]"
+              className="aspect-square  object-cover flex-1 hidden lg:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[300px] md:max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[50%] md:h-[80%]"
               alt="location"
             />
           </Link>
