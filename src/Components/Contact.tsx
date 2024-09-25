@@ -77,7 +77,7 @@ export const Contact = () => {
           <div className='max-w-screen-xl w-full mx-auto flex flex-col lg:flex-row justify-between items-center '>
           <form onSubmit={handleSubmit(onSubmit)} className="text-white max-w-xl font-normal w-full flex-1 h-full flex p-2 gap-2 flex-col justify-between items-start">
             <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
-              <h2 className="text-3xl mb-auto font-bold py-4">Свържете се с нас!</h2>
+              <h2 className="text-3xl mb-auto font-bold py-4">Направете запитване</h2>
 
               <FormPair>
                 <label htmlFor="name" className={labelStyles}>* Име:</label>
@@ -127,6 +127,7 @@ export const Contact = () => {
 
             <section className="w-[100%] text-md mt-auto flex-col gap-2 lg:flex-row py-2 border-t-2 border-accentDark font-extralight whitespace-nowrap flex justify-between items-start lg:items-center">
               <div className="flex flex-col gap-2 text-left justify-center items-start">
+                <p className="text-lg font-bold whitespace-nowrap">Контакти:</p>
                 <p className="font-extralight whitespace-nowrap flex items-center gap-2">
                   <FaCity />
                   жк. Тракия, Пловдив
@@ -134,7 +135,7 @@ export const Contact = () => {
                 <a
                   className="font-extralight whitespace-nowrap flex cursor-pointer no-underline items-center gap-2"
                   target="_blank"
-                  href="https://www.google.com/maps/place/Теди+снакс/@42.1446234,24.8017632,18z/data=!4m6!3m5!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq?entry=ttu"
+                  href="https://www.google.com/maps/place/42°08'40.9%22N+24°48'11.5%22E/@42.144699,24.803204,19z/data=!3m1!4b1!4m12!1m7!3m6!1s0x14acd1e8da946b17:0xa8f6964e940d48c5!2z0KLQtdC00Lgg0YHQvdCw0LrRgQ!8m2!3d42.1446477!4d24.8031488!16s%2Fg%2F11j600hyzq!3m3!8m2!3d42.144699!4d24.803204?entry=ttu&g_ep=EgoyMDI0MDkyMy4wIKXMDSoASAFQAw%3D%3D"
                 >
                   <FaLocationDot />Ягодовско шосе 17 <FaLink />
                 </a>
@@ -158,7 +159,7 @@ export const Contact = () => {
             <img
               src='/location.png'
               className="aspect-square  object-cover flex-1 hidden lg:block mb-6 bg-transparent rounded-blob hover:rounded-blobHover max-h-[300px] md:max-h-[450px] transition-all duration-300 hover:scale-105 cursor-pointer h-[50%] md:h-[80%]"
-              alt="location"
+              alt="location screenshot from a custom map"
             />
           </Link>
           </div>
