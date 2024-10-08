@@ -8,6 +8,7 @@ type AnimationProps = {
     maxW?: string;
     height?: string;
     delay?: number;
+    opacity?: number;  // Add opacity to the type definition
 }
 
 const Animation: React.FC<AnimationProps> = ({
@@ -15,12 +16,13 @@ const Animation: React.FC<AnimationProps> = ({
     maxW = '7xl',
     height = 'auto',
     delay = 0,
+    opacity = 0,  // Default opacity to 0 (fully hidden)
     children
 }) => {
     return (
         <motion.div
-            initial={{ y: moveY, opacity: 0 }}  // Start from below and with 0 opacity
-            whileInView={{ y: 0, opacity: 1 }}  // Animate to visible position
+            initial={{ y: moveY, opacity }}  // Start with the given opacity and position
+            whileInView={{ y: 0, opacity: 1 }}  // Animate to visible position and full opacity
             transition={{ duration: 0.8, ease: "easeOut", delay }} // Animation timing
             viewport={{ once: true }}  // Ensures animation happens only once
             className={`h-${height} w-full mx-auto max-w-${maxW}`}
