@@ -65,7 +65,7 @@ export const Contact = () => {
   };
 
   return (
-    <Animation maxW='3440px' moveY={150} opacity={1} start={0.7}>
+    <Animation maxW='3440px' moveY={150} opacity={1}>
         {sent ? '' : <h2 className='z-50 text-white text-h2clamp absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] animate-pulse'>Изпращане...</h2>}
       <div className={`${sent? 'opacity-100' : 'opacity-20' } relative p-6 max-w-[3440px] mx-auto w-full h-auto bg-accent flex justify-center items-center`}>
         <img
