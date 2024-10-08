@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-4 border-t border-opacity-20 border-white flex items-center justify-center py-2 text-center text-sm opacity-85">
-        <p className='py-4'>Powered by <a target='_blank' href='https://ivailo.dev' className='underline cursor-pointer transition duration-300 hover:text-accent'>a bearded guy</a></p>
+        <p className='py-4'>Powered by <a target='_blank' href='https://webdiv.studio' className='underline cursor-pointer transition duration-300 hover:text-accent'>WebDiv</a></p>
       </div>
     </footer>
   );

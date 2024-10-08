@@ -1,35 +1,30 @@
 'use client'
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { ReactNode, useRef } from 'react';
+import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
 
 type AnimationProps = {
     children: ReactNode;
-    start?: number;
-    opacity?: number;
-    height?: string;
-    maxW?: string;
     moveY?: number;
+    maxW?: string;
+    height?: string;
+    delay?: number;
 }
 
-const Animation: React.FC<AnimationProps> = ({ moveY = 100, maxW = '7xl', height = 'auto', children, start = 1, opacity = 0.1 }) => {
-    const ref = useRef<HTMLDivElement>(null);
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["0 1", `${start} 1`]
-    });
-
-    const yProgress = useTransform(scrollYProgress, [0, 1], [moveY, 0]); // Move up from 100px to 0px
-    const opacityProgress = useTransform(scrollYProgress, [0, 1], [opacity, 1]);
-
+const Animation: React.FC<AnimationProps> = ({
+    moveY = 100, // Default moveY: element will slide up by 100px
+    maxW = '7xl',
+    height = 'auto',
+    delay = 0,
+    children
+}) => {
     return (
         <motion.div
-            style={{
-                y: yProgress,
-                opacity: opacityProgress,
-                position:'relative',
-            }}
+            initial={{ y: moveY, opacity: 0 }}  // Start from below and with 0 opacity
+            whileInView={{ y: 0, opacity: 1 }}  // Animate to visible position
+            transition={{ duration: 0.8, ease: "easeOut", delay }} // Animation timing
+            viewport={{ once: true }}  // Ensures animation happens only once
             className={`h-${height} w-full mx-auto max-w-${maxW}`}
-            ref={ref}
+            style={{ position: 'relative' }}
         >
             {children}
         </motion.div>
