@@ -9,7 +9,7 @@ const TireChangePricing: React.FC = () => {
         <section className="my-6 w-full flex flex-col justify-center items-center max-w-container">
             <Animation>
                 <div className="bg-background overflow-x-auto p-6 md:w-[95%] rounded-md text-white max-w-container mx-auto w-full">
-                <h2 className="text-white w-full mb-10 text-center text-4xl font-semibold">Ценoразпис</h2>
+                    <h2 className="text-white w-full mb-10 text-center text-4xl font-semibold">Ценoразпис</h2>
                     <h3 className="text-xl font-semibold mb-4">ЛЕКИ АВТОМОБИЛИ</h3>
                     <table className="w-full max-w-container overflow-x-auto font-extralight text-center mb-8">
                         <thead>
@@ -264,6 +264,168 @@ const TireChangePricing: React.FC = () => {
                             </tr>
                         </tbody>
                     </table>
+
+                </div>
+            </Animation>
+            <Animation>
+                <div className="bg-background overflow-x-auto p-6 rounded-md text-white md:w-[95%] max-w-container mx-auto w-full">
+                    <h3 className="text-xl font-semibold mb-4">Runflat Гуми</h3>
+                    <table className="w-full overflow-x-auto font-extralight text-left border-collapse mb-8">
+                        <thead>
+                            <tr>
+                                <th className={`${thStyles} w-1/2`}>Услуга</th>
+                                <th className={`${thStyles} w-1/2`}>Цена (От)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Демонтаж + монтаж двигател, лек автомобил</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>800 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Демонтаж + монтаж двигател, бус/джип</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>1300 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Демонтаж + монтаж глава</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>300 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на ангренажно задвижване</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>300 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на семеринг вал</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>40 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на гарнитура глава</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на гарнитура всмукателен колектор</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на гарнитура изпускателен колектор</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>70 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на гарнитура капак глава</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на гарнитура картер</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>120 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на обслужващ ремък</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на масло и всички филтри</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>80 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на стартер</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>100 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на алтернатор</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>100 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Подмяна на антифриз + промивка</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>100 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Демонтаж + монтаж скоростна кутия на лек автомобил</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>400 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Демонтаж + монтаж скоростна кутия на бус/джип</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>500 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на масло ръчна трансмисия</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>40 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на масло автоматична трансмисия</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>120 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на масло в раздатъчна кутия и диференциал</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Демонтаж + монтаж на мехатроник на автоматична скоростна кутия</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>120 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на шарнир</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на носач</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на тампон (запресоване)</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>35 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на шенкел</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>120 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на амортисьор</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>80 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на кормилен накрайник</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>60 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на колесен лагер/главина</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>160 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на макферсън</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>160 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на пружина</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>70 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на стабилизираща щанга</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>80 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на тампон стабилизираща щанга</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>30 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на биалетка</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>40 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на полуоска</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>100 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на маншон каре</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>80 лв</td>
+                            </tr>
+                            <tr>
+                                <td className={`${tdStyles} w-1/2`}>Смяна на маншон кормилна рейка</td>
+                                <td className={`${tdStyles} w-1/2 text-center`}>80 лв</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
 
                 </div>
             </Animation>
