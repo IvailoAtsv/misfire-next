@@ -7,7 +7,6 @@ export default function Pricing() {
     return (
         <main className="pt-24 w-full min-h-screen bg-background">
 
-            <h1 className="py-16 w-full text-center font-extrabold text-3xl md:text-4xl lg:text-5xl text-white">Ценоразпис Misfire</h1>
             <section className="my-6 w-full flex flex-col justify-center items-center max-w-container">
                 <Animation>
                     <div className="bg-background overflow-x-auto p-6 rounded-md text-white md:w-[95%] max-w-container mx-auto w-full">
