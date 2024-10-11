@@ -1,4 +1,4 @@
-import { AccordionItem, AccordionTrigger, AccordionContent, Accordion } from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 
 
 export default function Gallery() {
