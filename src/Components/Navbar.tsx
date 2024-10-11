@@ -60,7 +60,7 @@ export function Navbar({ }) {
                     </li>
                      <li className={liStyles}>
                         <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/pricing">
-                                Ценоразппис
+                                Ценоразпис
                         </Link>
                     </li>
                 </ul>
