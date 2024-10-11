@@ -20,13 +20,15 @@ const ServiceCard: React.FC<Service> = (service) => {
             }`}
         >
             <img
-                src={service.src}
-                className="h-[50%] transition duration-300 group-hover:scale-110 overflow-hidden"
+            src={service.src}
+                className="h-[120px] transition duration-300 group-hover:scale-110 overflow-hidden"
             />
             <h3 className="text-xl text-center font-medium">{service.label}</h3>
+            <div className='min-h-[100px] flex flex-col w-full justify-end items-end'>
             <p className="text-sm w-full text-start text-white font-extralight opacity-75">
                 {service.description}
             </p>
+            </div>
         </a>
         </Animation>
     );

@@ -10,11 +10,11 @@ export const About = () => {
                     <div className="w-full flex justify-center items-center flex-1 lg:w-6/12">
                         <section className="w-full flex h-[80vh] max-h-[900px] justify-center lg:justify-start items-center gap-4 flex-1">
                             <div className="flex-col h-full gap-4 flex justify-center items-center">
-                                <img src="/about1.webp" className={imgStyles} />
-                                <img src="/about2.webp" className={imgStyles} />
+                                <img src="/img3.webp" className={imgStyles} />
+                                <img src="/img6.webp" className={imgStyles} />
                             </div>
                             <div className="relative flex items-center justify-center h-full group">
-                                <img src="/about3.webp" className={imgStyles} />
+                                <img src="/img2.webp" className={imgStyles} />
                                 <svg className="transition duration-300 absolute bottom-[20%] group-hover:scale-105 z-0 right-[-10%]"
                                     width="134"
                                     height="106"
@@ -586,16 +586,15 @@ export const About = () => {
                             </div>
                         </section>
                     </div>
-                    <div className="w-full z-20 bg-transparent text-center md:text-left py-4 flex-1">
+                    <div className="w-full z-20 bg-transparent  py-4 flex-1">
                         <div className="mt-10 lg:mt-0 w-full">
-                            <span className="mb-4 bg-transparent block text-xl font-light text-accent">
-                                Защо да изберете нас?
-                            </span>
-                            <h2 className="mb-5 bg-transparent text-3xl font-bold text-dark text-white sm:text-[40px]/[48px]">
-                                Вашата кола заслужава най-доброто, а ние сме най-добрите
+                            <h2 className="mb-4 md:text-left text-center bg-transparent block text-3xl md:text-4xl  font-bold text-white">
+                                Защо да изберете <span className='text-accent font-bold'>Misfire?</span>
                             </h2>
+                            
                             <p className="mb-5 bg-transparent opacity-75">
-                               Предлагаме професионални услуги, гаранция за качество и конкурентни цени. Доверите се на нашия опит и знания с вашия автомобил, и се насладете на професионалните ни решения.
+                              Автосервиз "Мисфайър" е основан през 2022 година в град София с ясната цел да предостави висококачествени услуги в областта на ремонтите и поддръжката на автомобили. Нашата основна специализация е обслужването на немски автомобили, като сме посветени на предоставянето на надеждни и професионални решения за всеки автомобил, който ни бъде поверен.
+Екипът ни разполага с експертен опит в ремонтите на двигатели, трансмисии, окачване, спирачни, електрически, охладителни и горивни системи. Осигуряваме прецизни и дълготрайни решения, които гарантират безопасността и оптималната работа на вашия автомобил.
                             </p>
 
                         </div>

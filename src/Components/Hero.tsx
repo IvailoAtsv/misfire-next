@@ -4,19 +4,18 @@ import Link from "next/link";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
 
-import hero1 from '../../public/hero1.webp'
-import hero2 from '../../public/hero2.webp'
-import hero3 from '../../public/hero3.webp'
-import hero4 from '../../public/hero4.webp'
-import hero5 from '../../public/hero5.webp'
-import hero6 from '../../public/hero6.webp'
+import hero1 from '../../public/img1.webp'
+import hero2 from '../../public/img2-2.webp'
+import hero3 from '../../public/img3-2.webp'
+import hero4 from '../../public/img4.webp'
+import hero5 from '../../public/img5.webp'
 
 export const Hero = () => {
   const buttonVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, x: -50 },
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0,
       transition: {
         type: "spring",
         stiffness: 50,
@@ -25,31 +24,42 @@ export const Hero = () => {
       },
     },
   };
-  const h1Variants = {
-    hidden: { opacity: 0, y: 50 },
+  const ImgVariants = {
+    hidden: { opacity: 0, x: 50 },
     visible: {
       opacity: 1,
-      y: 0,
+      x: 0,
       transition: {
         type: "spring",
         stiffness: 50,
         damping: 10,
-        delay: 0.3,
+        delay: 0.1,
+      },
+    },
+  };
+  const h1Variants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 50,
+        damping: 10,
+        delay: 0.1,
       },
     },
   };
 
-  const images = [hero1,hero2,hero3,hero4,hero5,hero6]
+  const images = [hero1,hero2,hero3,hero4,hero5]
 
   return (
-    <main id="home" className="relative w-full h-[70vh]">
+    <main id="home" className="relative grid grid-cols-1 lg:grid-cols-5 w-full max-w-screen-xl mx-auto lg:max-h-[900px] min-h-[70vh]">
       {/* Video for larger screens */}
-     <Carousel autoPlayInterval={3500} hasIndexBoard={false} hasMediaButton={false} images={images} hasSizeButton={false} isAutoPlaying={true} isLoop={true} hasThumbnails={false} hasLeftButton={false} hasRightButton={false} style={{width:"100%", height:'70vh', position:'relative'}}/>
-      <span className="absolute flex justify-center items-center top-0 left-0 w-full h-[70vh] bg-black bg-opacity-70"></span>
-      <div className="absolute top-0 left-[50%] translate-x-[-50%] z-20 bg-transparent mx-auto mt-6 flex-col h-[90%] w-[90%] container flex items-center justify-center">
-        <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="font-semibold tracking-wider leading-tight text-center text-white text-h1clamp">Автосервиз Misfire</motion.h1>
-        <motion.p initial="hidden" animate="visible" variants={h1Variants} className="text-white opacity-80 px-4 md:w-[50%] text-center mb-4 text-lg font-light">
-          Ние сме вашият доверен автосервиз за общи ремонти, тунинг, пътна помощ, монтаж, демонтаж и реглаж на гуми.
+      <div className="text-start col-span-2 z-30 mx-auto mt-6 flex-col h-[90%] w-full container flex items-center md:items-start justify-center">
+        <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="font-semibold tracking-wider leading-tight text-white text-center md:text-left text-h1clamp">Автосервиз <br/> Misfire</motion.h1>
+        <motion.p initial="hidden" animate="visible" variants={h1Variants} className="text-white text-center md:text-left opacity-70 pr-4 mb-4 text-lg font-light">
+          Aвтосервиз за общи ремонти, тунинг, пътна помощ, монтаж, демонтаж и реглаж на гуми.
         </motion.p>
         <motion.div
           initial="hidden"
@@ -65,6 +75,11 @@ export const Hero = () => {
           </Link>
         </motion.div>
       </div>
+      <motion.div variants={ImgVariants} initial="hidden" animate="visible" className="relative col-span-3"> 
+      <span className="absolute z-20 top-0 left-0 w-full lg:bg-gradient-to-r bg-gradient-to-b from-background from-5% to-transparent  lg:max-h-[900px] min-h-[70vh]"></span>
+     <Carousel autoPlayInterval={3500} hasIndexBoard={false} hasMediaButton={false} images={images} hasSizeButton={false} isAutoPlaying={true} isLoop={true} hasThumbnails={false} hasLeftButton={false} hasRightButton={false} style={{width:"100%", height:'70vh'}}/>
+      </motion.div>
+
     </main>
   );
 };
