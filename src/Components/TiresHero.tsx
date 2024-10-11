@@ -1,5 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
+import TiresForm from "./TiresForm";
 
 const TireHero = () =>{
          const buttonVariants = {
@@ -43,17 +44,16 @@ const TireHero = () =>{
   };
     return (
         <>
-            <section className="mb-6  md:mb-0 w-full min-h-[60vh] py-20 container flex flex-col lg:flex-row justify-center items-center gap-4">
+            <section className="mb-6 md:mb-0 w-full min-h-screen py-20 container grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-4">
+                  <TiresForm/>
                 <div className="text-white w-[100%] flex flex-1 gap-2 flex-col justify-center items-center p-4">
-                    <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-full my-2 text-center lg:text-left font-light text-h2clamp">Смяна на Гуми</motion.h1>
-                    <motion.p initial="hidden" animate="visible" variants={h2Variants} className="w-full font-extralight opacity-75 text-center lg:text-left text-lg">Монтаж, Демонтаж, Баланс и Продажба на гуми, нови и втора употреба. <br/> За наличности се свържете с нас.</motion.p>
+                    {/* <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="w-full my-2 text-center lg:text-left font-light text-h2clamp">Смяна на Гуми</motion.h1>
+                    <motion.p initial="hidden" animate="visible" variants={h2Variants} className="w-full font-extralight opacity-75 text-center lg:text-left text-lg">Монтаж, Демонтаж, Баланс и Продажба на гуми, нови и втора употреба. <br/> За наличности се свържете с нас.</motion.p> */}
                     <motion.div initial="hidden" animate="visible" variants={buttonVariants} className="lg:self-start self-center pt-4">
-                    <motion.a  href="#tire-form" className="whitespace-nowrap self-center hover:bg-accentDark hover:translate-y-[-3px] transition duration-300 hover:shadow-xl bg-accent border border-accent hover:border-accentDark px-6 py-3 text-white font-semibold text-md rounded-sm">Направете запитване</motion.a>
+                    <img src="/tires.webp" className="rounded-lg object-cover h-[60vh]"/>
                     </motion.div>
                 </div>
-                <motion.img initial="hidden" animate="visible" variants={h1Variants} src="tire-shop.jpg" className="flex-1 w-[90%] h-[95%] lg:w-1/2 object-cover object-top rounded-md" />
             </section>
-
         </>
     )
 }

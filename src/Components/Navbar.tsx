@@ -36,7 +36,7 @@ export function Navbar({ }) {
                 </button>
 
                 <ul
-                    className={`transition-all z-50 duration-300 ease-out overflow-hidden sm:overflow-auto w-full flex flex-col ${nav ? 'h-auto min-h-[30vh] mt-20' : 'md:h-auto h-0'} md:flex md:flex-row mx-auto  md:justify-end md:gap-4 justify-start items-center rounded-lg`}
+                    className={`transition-all z-50 duration-300 ease-out overflow-hidden sm:overflow-auto w-full flex flex-col ${nav ? 'h-auto min-h-[40vh] mt-20' : 'md:h-auto h-0'} md:flex md:flex-row mx-auto  md:justify-end md:gap-4 justify-start items-center rounded-lg`}
                 >
                     <li className={liStyles}>
                         <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/">
@@ -56,6 +56,11 @@ export function Navbar({ }) {
                      <li className={liStyles}>
                         <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/tires">
                                 Сервиз гуми
+                        </Link>
+                    </li>
+                     <li className={liStyles}>
+                        <Link className={navBtnStyle} onClick={()=>setNav(false)} href="/pricing">
+                                Ценоразппис
                         </Link>
                     </li>
                 </ul>

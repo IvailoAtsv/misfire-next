@@ -269,7 +269,7 @@ const TireChangePricing: React.FC = () => {
             </Animation>
             <Animation>
                 <div className="bg-background overflow-x-auto p-6 rounded-md text-white md:w-[95%] max-w-container mx-auto w-full">
-                    <h3 className="text-xl font-semibold mb-4">Runflat Гуми</h3>
+                    <h3 className="text-xl font-semibold mb-4">Основен Ценоразпис</h3>
                     <table className="w-full overflow-x-auto font-extralight text-left border-collapse mb-8">
                         <thead>
                             <tr>

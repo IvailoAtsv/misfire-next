@@ -19,18 +19,18 @@ export default function Gallery() {
     ];
 
     return (
-        <div className="w-full mx-auto max-w-screen-xl px-4 py-8">
-            <h2 className="text-white mx-auto text-3xl md:text-4xl lg:text-5xl font-bold w-full text-center">Галерия</h2>
-            <Accordion type="single" collapsible className=" text-white">
+        <div className="w-full py-32 mx-auto max-w-screen-xl px-8">
+            <h2 className="text-white mx-auto pb-16 text-3xl md:text-4xl lg:text-5xl font-bold w-full text-center">Галерия</h2>
+            {/* <Accordion type="single" collapsible className=" text-white">
                 {/* Accordion Item */}
-                <AccordionItem className="mx-auto" value="gallery">
+            {/*</div><AccordionItem className="mx-auto" value="gallery">
                     {/* Title (Trigger) */}
-                    <AccordionTrigger className=" text-lg font-semibold">
+            {/* <AccordionTrigger className=" text-lg font-semibold">
                         Показване на Галерията {/* "Show Gallery" in Bulgarian */}
-                    </AccordionTrigger>
+            {/* </AccordionTrigger> */}
 
                     {/* Accordion Content */}
-                    <AccordionContent>
+            {/* <AccordionContent>  */}
                         <div className="flex flex-wrap gap-4">
                             {images.map((src, index) => (
                                 <img
@@ -38,13 +38,13 @@ export default function Gallery() {
                                     key={index}
                                     src={src}
                                     alt={`Gallery image ${index + 1}`}
-                                    className="h-[350px] w-auto object-cover"
+                                    className="h-[40vh] w-auto object-cover"
                                 />
                             ))}
                         </div>
-                    </AccordionContent>
-                </AccordionItem>
-            </Accordion>
+            {/* </AccordionContent> */}
+            {/* </AccordionItem> */}
+            {/* </Accordion> */}
         </div>
     );
 }

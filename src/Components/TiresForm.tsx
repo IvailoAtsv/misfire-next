@@ -56,10 +56,10 @@ const TireRequestForm: React.FC = () => {
   };
 
   return (
-    <Animation maxW='3440px' >
+    <Animation >
       <Toaster />
         {sent ? '' : <h2 className='z-50 text-white text-h2clamp absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] animate-pulse'>Изпращане...</h2>}
-     <section id='tire-form' className={`${sent? 'opacity-100' : 'opacity-20' } relative w-[95%] bg-opacity-40 my-6 max-w-container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-6 border-backgroundDark  border-opacity-40 p-6 rounded-lg text-white`}>
+     <section id='tire-form' className={`${sent? 'opacity-100' : 'opacity-20' } relative w-[95%] bg-opacity-40 my-6 mx-auto px-4 grid grid-cols-1 gap-6 border-backgroundDark  border-opacity-40 p-6 rounded-lg text-white`}>
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-4">
           <h3 className="text-4xl mb-4 font-semibold">Запитване за гуми</h3>
           <div>
@@ -108,15 +108,6 @@ const TireRequestForm: React.FC = () => {
           </div>
           <button type="submit" className="w-full bg-accent hover:bg-accentDark transition duration-300 text-white font-semibold py-2 rounded-md">Изпрати</button>
         </form>
-        <div className="relative w-full mx-auto h-64 md:h-auto flex items-center justify-center">
-          <Image
-            src="/tires.webp"
-            alt="Tire"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
-          />
-        </div>
       </section>
     </Animation>
   );
