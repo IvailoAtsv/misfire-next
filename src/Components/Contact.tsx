@@ -74,7 +74,7 @@ export const Contact = () => {
           className="object-cover h-[200px] absolute bottom-[99%] w-[100%]"
         />
         <section className="w-full gap-3 lg:max-h-[700px] bg-accent rounded-lg container flex-col lg:flex-row items-center flex justify-between">
-          <div className='max-w-screen-[1560px] w-[95%] w-full mx-auto flex flex-col lg:flex-row justify-between items-center '>
+          <div className='max-w-[1920px] w-[95%] w-full mx-auto flex flex-col lg:flex-row justify-between items-center '>
           <form onSubmit={handleSubmit(onSubmit)} className="text-white max-w-xl font-normal w-full flex-1 h-full flex p-2 gap-2 flex-col justify-between items-start">
             <div className="text-white font-normal w-full flex-1 h-full gap-2 flex flex-col justify-evenly items-start">
               <h2 className="text-3xl mb-auto font-bold py-4">Направете запитване</h2>

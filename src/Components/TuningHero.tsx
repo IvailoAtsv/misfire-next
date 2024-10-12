@@ -66,7 +66,7 @@ const images = [ img3, img4, img6];
     // </section>
 export default function TuningHero(){
 return(
-    <main id="home" className="relative grid grid-cols-1 lg:grid-cols-5 max-w-screen-[1560px] w-[95%] mx-auto lg:max-h-[900px] min-h-[70vh]">
+    <main id="home" className="relative grid grid-cols-1 lg:grid-cols-5 max-w-[1920px] w-[95%] mx-auto lg:max-h-[900px] min-h-[70vh]">
       {/* Video for larger screens */}
       <div className="text-start col-span-2 z-30 mx-auto mt-6 flex-col h-[90%] w-full container flex items-center md:items-start justify-center">
         <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="font-semibold tracking-wider leading-tight text-white text-center md:text-left text-h1clamp">Misfire<br/> Тунинг</motion.h1>
