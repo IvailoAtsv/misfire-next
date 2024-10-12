@@ -54,11 +54,11 @@ export const Hero = () => {
   const images = [hero1,hero2,hero3,hero4,hero5]
 
   return (
-    <main id="home" className="relative grid grid-cols-1 lg:grid-cols-5 w-full max-w-screen-xl mx-auto lg:max-h-[900px] min-h-[70vh]">
+    <main id="home" className="relative grid grid-cols-1 lg:grid-cols-5 max-w-screen-[1560px] w-[95%] mx-auto lg:max-h-[900px] min-h-[70vh]">
       {/* Video for larger screens */}
       <div className="text-start col-span-2 z-30 mx-auto mt-6 flex-col h-[90%] w-full container flex items-center md:items-start justify-center">
         <motion.h1 initial="hidden" animate="visible" variants={h1Variants} className="font-semibold tracking-wider leading-tight text-white text-center md:text-left text-h1clamp">Автосервиз <br/> Misfire</motion.h1>
-        <motion.p initial="hidden" animate="visible" variants={h1Variants} className="text-white text-center md:text-left opacity-70 pr-4 mb-4 text-lg font-light">
+        <motion.p initial="hidden" animate="visible" variants={h1Variants} className="text-white text-center md:text-left opacity-70 md:px-0 px-4 mb-4 text-lg font-light">
           Aвтосервиз за общи ремонти, тунинг, пътна помощ, монтаж, демонтаж и реглаж на гуми.
         </motion.p>
         <motion.div

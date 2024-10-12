@@ -88,7 +88,7 @@ export default function Gallery() {
 
 
     return (
-        <div className="hidden lg:inline-flex flex-col w-full py-32 mx-auto max-w-screen-xl px-8">
+        <div className="hidden lg:inline-flex flex-col w-full py-32 mx-auto max-w-screen-[1560px] w-[95%] px-8">
             <h2 className="text-white mx-auto pb-16 text-3xl md:text-4xl lg:text-5xl font-bold w-full text-center">Галерия</h2>
             {/* <Accordion type="single" collapsible className=" text-white">
                 {/* Accordion Item */}

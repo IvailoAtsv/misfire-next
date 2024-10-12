@@ -5,13 +5,13 @@ export const About = () => {
 
     return (
         <Animation opacity={0.6}>
-        <section className="w-full max-w-screen-xl mx-auto px-4 mt-10 mb-[200px] bg-background text-white min-h-[50vh] gap-2">
+        <section className=" max-w-screen-[1560px] w-[95%] mx-auto px-4 mt-10 mb-[200px] bg-background text-white min-h-[50vh] gap-2">
                 <div className="gap-4 flex flex-col-reverse lg:flex-row items-center justify-center">
                     <div className="w-full flex justify-center items-center flex-1 lg:w-6/12">
                         <section className="w-full flex h-[80vh] max-h-[900px] justify-center lg:justify-start items-center gap-4 flex-1">
                             <div className="flex-col h-full gap-4 flex justify-center items-center">
                                 <img src="/img3.webp" className={imgStyles} />
-                                <img src="/img6.webp" className={imgStyles} />
+                                <img src="/gallery/2.webp" className={imgStyles} />
                             </div>
                             <div className="relative flex items-center justify-center h-full group">
                                 <img src="/img2.webp" className={imgStyles} />
