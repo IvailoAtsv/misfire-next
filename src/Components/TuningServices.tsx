@@ -112,7 +112,7 @@ const TuningServices: React.FC = () => {
   return (
     <>
       <h2 className="w-full  mx-auto text-center mt-12 text-white font-bold text-3xl md:text-4xl lg:text-5xl">Misfire предлага:</h2>
-      <section className="max-w-[1920px] w-[95%] my-6 w-full container mx-auto px-4 flex flex-col items-center justify-center gap-6">
+      <section className="max-w-[1560px] w-[95%] my-6 w-full container mx-auto px-4 flex flex-col items-center justify-center gap-6">
         <Animation>
           <section className="relative w-full flex flex-col justify-center items-center py-14 text-white">
             <div className="container w-full px-4">
