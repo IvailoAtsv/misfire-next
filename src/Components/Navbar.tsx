@@ -22,7 +22,7 @@ export function Navbar({ }) {
             >
                 {/* {nav && <div className='w-screen h-screen z-0 bg-black opacity-40'></div>} */}
                 <Link onClick={()=>setNav(false)} href={"/"} className='px-6 py-3 h-[60px] w-[180px]'>
-                    <Image alt='logo' src="/misfire-1 2.png" width={500} height={500} className={`absolute h-[60px] py-1 w-auto top-0 left-0 `} />
+                    <Image alt='logo' src="/misfire-1.png" width={500} height={500} className={`absolute h-[60px] py-1 w-auto top-0 left-0 `} />
                 </Link>
                 {/* <img
                     // src={logo}
